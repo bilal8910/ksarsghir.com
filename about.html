@@ -1,1 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>من أنا — بلال الهيشو | Ksar Sghir Lens | À propos | About</title>
+<meta name="description" content="بلال الهيشو — مصور محترف من القصر الصغير، مؤسس Ksar Sghir Lens. قصتي مع التصوير والمنطقة التي أحبها.">
+<link href='https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap' rel='stylesheet'/>
+<style>
+:root {
+  --bg:#0a0f1a; --bg2:#16213e; --bg3:#1a2a40;
+  --text:#e0e0e0; --text2:#aaa; --text3:#666;
+  --border:rgba(0,180,216,0.15); --accent:#00b4d8;
+  --gold:#c29b62;
+}
+body.light {
+  --bg:#f5f7fa; --bg2:#fff; --bg3:#eef1f5;
+  --text:#1a1a2e; --text2:#555; --text3:#999;
+  --border:rgba(0,180,216,0.2); --accent:#0096c7;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); transition:all 0.3s; }
+
+header { background:var(--bg2); height:60px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:2px solid var(--accent); position:sticky; top:0; z-index:100; box-shadow:0 2px 10px rgba(0,0,0,0.2); }
+.logo { text-decoration:none; }
+.logo-ar { font-size:18px; font-weight:900; color:var(--accent); display:block; }
+.logo-en { font-size:9px; color:var(--text3); letter-spacing:3px; display:block; }
+.hright { display:flex; align-items:center; gap:8px; }
+.lang-sw { display:flex; gap:4px; }
+.lb { background:transparent; border:1px solid var(--border); color:var(--text2); font-size:11px; font-weight:700; padding:4px 9px; border-radius:10px; cursor:pointer; font-family:'Tajawal',sans-serif; transition:all 0.2s; }
+.lb.on { background:var(--accent); color:#fff; border-color:var(--accent); }
+.theme-btn { background:transparent; border:1px solid var(--border); color:var(--text2); width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; }
+
+nav { background:var(--bg2); border-bottom:1px solid var(--border); padding:0 20px; display:flex; gap:5px; overflow-x:auto; }
+.nav-link { color:var(--text2); text-decoration:none; font-size:12px; font-weight:600; padding:12px 14px; white-space:nowrap; border-bottom:2px solid transparent; transition:all 0.2s; }
+.nav-link:hover, .nav-link.on { color:var(--accent); border-bottom-color:var(--accent); }
+
+/* HERO */
+.hero { background:linear-gradient(180deg,var(--bg3),var(--bg)); padding:50px 20px 40px; text-align:center; border-bottom:1px solid var(--border); position:relative; overflow:hidden; }
+.hero::before { content:'📷'; font-size:150px; position:absolute; top:-30px; left:50%; transform:translateX(-50%); opacity:0.03; }
+.profile-avatar { width:110px; height:110px; border-radius:50%; border:3px solid var(--accent); margin:0 auto 15px; background:linear-gradient(135deg,var(--bg3),var(--bg2)); display:flex; align-items:center; justify-content:center; font-size:50px; box-shadow:0 0 30px rgba(0,180,216,0.2); }
+.profile-name { font-size:28px; font-weight:900; color:var(--text); margin-bottom:5px; }
+.profile-title { font-size:14px; color:var(--accent); margin-bottom:5px; }
+.profile-location { font-size:13px; color:var(--text2); }
+.social-links { display:flex; justify-content:center; gap:10px; margin-top:20px; flex-wrap:wrap; }
+.social-btn { display:flex; align-items:center; gap:6px; padding:8px 16px; border-radius:20px; text-decoration:none; font-size:12px; font-weight:700; transition:all 0.2s; }
+.social-fb { background:rgba(24,119,242,0.15); color:#1877f2; border:1px solid rgba(24,119,242,0.3); }
+.social-fb:hover { background:#1877f2; color:#fff; }
+.social-wa { background:rgba(37,211,102,0.15); color:#25d366; border:1px solid rgba(37,211,102,0.3); }
+.social-wa:hover { background:#25d366; color:#fff; }
+.social-site { background:rgba(0,180,216,0.15); color:var(--accent); border:1px solid var(--border); }
+.social-site:hover { background:var(--accent); color:#fff; }
+
+/* STATS */
+.stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; max-width:700px; margin:25px auto 0; }
+.stat { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:15px 10px; text-align:center; }
+.stat-num { font-size:24px; font-weight:900; color:var(--accent); }
+.stat-label { font-size:11px; color:var(--text2); margin-top:4px; }
+
+/* CONTAINER */
+.container { max-width:800px; margin:0 auto; padding:30px 20px; }
+
+/* STORY */
+.story-card { background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:25px; margin-bottom:20px; }
+.story-card h2 { font-size:18px; font-weight:700; color:var(--accent); margin-bottom:15px; display:flex; align-items:center; gap:10px; }
+.story-card p { color:var(--text2); font-size:14.5px; line-height:1.9; margin-bottom:12px; }
+.story-card p:last-child { margin-bottom:0; }
+
+/* SKILLS */
+.skills-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-bottom:20px; }
+.skill-card { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:18px; display:flex; align-items:center; gap:12px; transition:all 0.3s; }
+.skill-card:hover { border-color:var(--accent); transform:translateY(-2px); }
+.skill-icon { font-size:30px; }
+.skill-text strong { display:block; font-size:14px; color:var(--text); }
+.skill-text span { font-size:12px; color:var(--text2); }
+
+/* MISSION */
+.mission-card { background:linear-gradient(135deg,var(--bg3),var(--bg2)); border:1px solid var(--border); border-radius:14px; padding:25px; margin-bottom:20px; text-align:center; }
+.mission-card h2 { font-size:18px; font-weight:700; color:var(--gold); margin-bottom:12px; }
+.mission-card p { color:var(--text2); font-size:14px; line-height:1.9; max-width:600px; margin:0 auto; }
+
+/* CTA */
+.cta-box { background:linear-gradient(135deg,#0d1b2a,#1a3a5c); border:1px solid var(--border); border-radius:14px; padding:30px 20px; text-align:center; margin-bottom:20px; }
+.cta-box h3 { font-size:18px; font-weight:700; color:var(--text); margin-bottom:8px; }
+.cta-box p { color:var(--text2); font-size:13px; margin-bottom:20px; }
+.cta-btns { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; }
+.btn { padding:10px 22px; font-size:13px; font-weight:700; text-decoration:none; border-radius:25px; font-family:'Tajawal',sans-serif; transition:all 0.3s; display:inline-block; }
+.btn-primary { background:var(--accent); color:#fff; }
+.btn-primary:hover { background:#0096c7; transform:translateY(-2px); }
+.btn-outline { background:transparent; border:1px solid var(--border); color:var(--text2); }
+.btn-outline:hover { border-color:var(--accent); color:var(--accent); }
+
+/* FOOTER */
+footer { background:var(--bg2); border-top:1px solid var(--border); padding:25px 20px 15px; margin-top:10px; }
+.footer-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:800px; margin:0 auto 20px; }
+.footer-col h4 { font-size:13px; font-weight:700; color:var(--accent); margin-bottom:10px; }
+.footer-col a { display:block; color:var(--text3); text-decoration:none; font-size:12px; margin-bottom:6px; transition:color 0.2s; }
+.footer-col a:hover { color:var(--accent); }
+.footer-bottom { text-align:center; padding-top:15px; border-top:1px solid var(--border); font-size:11px; color:var(--text3); }
+.footer-bottom span { color:var(--accent); }
+
+@media(max-width:600px){
+  .stats { grid-template-columns:repeat(2,1fr); }
+  .skills-grid { grid-template-columns:1fr; }
+  .footer-grid { grid-template-columns:1fr 1fr; }
+  .footer-col:last-child { grid-column:span 2; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="https://www.ksarsghir.com" class="logo">
+    <span class="logo-ar" id="logo-ar">القصر الصغير</span>
+    <span class="logo-en">KSAR SGHIR</span>
+  </a>
+  <div class="hright">
+    <div class="lang-sw">
+      <button class="lb on" onclick="setL('ar')">AR</button>
+      <button class="lb" onclick="setL('fr')">FR</button>
+      <button class="lb" onclick="setL('en')">EN</button>
+    </div>
+    <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">🌙</button>
+  </div>
+</header>
+
+<nav>
+  <a href="https://www.ksarsghir.com" class="nav-link" id="n1">🏠 الرئيسية</a>
+  <a href="https://tourism.ksarsghir.com" class="nav-link" id="n2">🗺️ السياحة</a>
+  <a href="https://gallery.ksarsghir.com" class="nav-link" id="n3">📸 المعرض</a>
+  <a href="https://blog.ksarsghir.com" class="nav-link" id="n4">✍️ المدونة</a>
+  <a href="https://store.ksarsghir.com" class="nav-link" id="n5">🛒 المتجر</a>
+  <a href="https://advertise.ksarsghir.com" class="nav-link" id="n6">📢 إعلن معنا</a>
+  <a href="https://meteo.ksarsghir.com" class="nav-link" id="n7">🌤️ الطقس</a>
+</nav>
+
+<div class="hero">
+  <div class="profile-avatar">👤</div>
+  <div class="profile-name" id="profile-name">بلال الهيشو</div>
+  <div class="profile-title" id="profile-title">📷 مصور محترف • Ksar Sghir Lens</div>
+  <div class="profile-location">📍 القصر الصغير، المغرب</div>
+  <div class="social-links">
+    <a href="https://www.facebook.com/ksarsghircity" target="_blank" class="social-btn social-fb">📘 ksarsghircity — 21K</a>
+    <a href="https://www.facebook.com/KsarSghirLens" target="_blank" class="social-btn social-fb">📸 Ksar Sghir Lens — 56K</a>
+    <a href="https://wa.me/212708053745" target="_blank" class="social-btn social-wa">💬 WhatsApp</a>
+    <a href="https://www.ksarsghir.com" class="social-btn social-site">🌐 ksarsghir.com</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">77K</div><div class="stat-label" id="st1">متابع على Facebook</div></div>
+    <div class="stat"><div class="stat-num">141+</div><div class="stat-label" id="st2">صورة احترافية</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label" id="st3">مواقع إلكترونية</div></div>
+    <div class="stat"><div class="stat-num">9</div><div class="stat-label" id="st4">مقال سياحي</div></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="story-card">
+    <h2 id="s1-title">🌊 قصتي مع القصر الصغير</h2>
+    <p id="s1-p1">أنا بلال الهيشو، من أبناء القصر الصغير الأصيلين — هذه البلدة الساحلية الصغيرة التي تقع في أقصى شمال المغرب على ضفاف مضيق جبل طارق. وُلدت هنا وترعرعت بين أمواج البحر وعطر الطبيعة الجبلية، وتشربت حب هذا المكان منذ الصغر.</p>
+    <p id="s1-p2">بدأت رحلتي مع التصوير من شغف حقيقي بتوثيق جمال منطقتي التي أعتقد أنها لا تأخذ حقها من الاهتمام السياحي رغم ما تمتلكه من كنوز طبيعية وتاريخية نادرة. كل صورة التقطها هي رسالة للعالم: "القصر الصغير تستحق الزيارة!"</p>
+    <p id="s1-p3">انطلقت بكاميرا بسيطة وشغف كبير، وبفضل المثابرة والعمل المستمر أصبح لدي اليوم جمهور يتجاوز <strong>77,000 متابع</strong> على Facebook — أكبر صفحة تصوير متخصصة في المنطقة.</p>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card"><div class="skill-icon">📸</div><div class="skill-text"><strong id="sk1-t">التصوير الطبيعي والبحري</strong><span id="sk1-d">لقطات احترافية للشواطئ، المواجز، والمناظر الطبيعية</span></div></div>
+    <div class="skill-card"><div class="skill-icon">🎥</div><div class="skill-text"><strong id="sk2-t">التوثيق المرئي</strong><span id="sk2-d">توثيق الحياة اليومية والتراث البحري لأبناء المنطقة</span></div></div>
+    <div class="skill-card"><div class="skill-icon">🌐</div><div class="skill-text"><strong id="sk3-t">إنشاء المحتوى الرقمي</strong><span id="sk3-d">مواقع، مقالات سياحية، ومحتوى بـ 3 لغات</span></div></div>
+    <div class="skill-card"><div class="skill-icon">🗺️</div><div class="skill-text"><strong id="sk4-t">الترويج السياحي</strong><span id="sk4-d">تعريف العالم بجمال شمال المغرب عبر الصورة والكلمة</span></div></div>
+  </div>
+
+  <div class="mission-card">
+    <h2 id="mission-title">🎯 رسالتي</h2>
+    <p id="mission-text">أؤمن بأن القصر الصغير وشمال المغرب يستحقان مكانة سياحية أكبر بكثير مما هو عليه الآن. رسالتي هي تسليط الضوء على جمال هذه المنطقة المخفية وجعلها وجهة سياحية معروفة عالمياً — من خلال التصوير الاحترافي والمحتوى الرقمي المتعدد اللغات.</p>
+  </div>
+
+  <div class="cta-box">
+    <h3 id="cta-title">هل تريد التعاون معنا؟</h3>
+    <p id="cta-desc">سواء كنت مصوراً، صاحب نشاط تجاري، أو مهتماً بالترويج للمنطقة — يسعدني التواصل معك</p>
+    <div class="cta-btns">
+      <a href="https://advertise.ksarsghir.com" class="btn btn-primary" id="cta-btn1">📢 إعلن معنا</a>
+      <a href="https://wa.me/212708053745" target="_blank" class="btn btn-outline" id="cta-btn2">💬 تواصل عبر WhatsApp</a>
+      <a href="https://gallery.ksarsghir.com" class="btn btn-outline" id="cta-btn3">🖼️ شاهد أعمالي</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4 id="f-col1-title">🔗 المواقع</h4>
+      <a href="https://www.ksarsghir.com" id="f1">الرئيسية</a>
+      <a href="https://tourism.ksarsghir.com" id="f2">الدليل السياحي</a>
+      <a href="https://gallery.ksarsghir.com" id="f3">معرض الصور</a>
+      <a href="https://blog.ksarsghir.com" id="f4">المدونة</a>
+    </div>
+    <div class="footer-col">
+      <h4 id="f-col2-title">🛠️ خدمات</h4>
+      <a href="https://store.ksarsghir.com" id="f5">متجر الصور</a>
+      <a href="https://advertise.ksarsghir.com" id="f6">إعلن معنا</a>
+      <a href="https://meteo.ksarsghir.com" id="f7">الطقس والبحر</a>
+      <a href="https://salat.ksarsghir.com" id="f8">مواقيت الصلاة</a>
+    </div>
+    <div class="footer-col">
+      <h4 id="f-col3-title">📄 قانوني</h4>
+      <a href="https://privacy.ksarsghir.com" id="f9">سياسة الخصوصية</a>
+      <a href="#" id="f10">اتفاقية استخدام الصور</a>
+      <a href="#" class="on" id="f11">من أنا</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 <span>Ksar Sghir</span> • Bilal El Hichou — All rights reserved</div>
+</footer>
+
+<script>
+var L = {
+  ar: {
+    dir:'rtl', 'logo-ar':'القصر الصغير',
+    n1:'🏠 الرئيسية', n2:'🗺️ السياحة', n3:'📸 المعرض', n4:'✍️ المدونة',
+    n5:'🛒 المتجر', n6:'📢 إعلن معنا', n7:'🌤️ الطقس',
+    'profile-name':'بلال الهيشو',
+    'profile-title':'📷 مصور محترف • Ksar Sghir Lens',
+    st1:'متابع على Facebook', st2:'صورة احترافية', st3:'مواقع إلكترونية', st4:'مقال سياحي',
+    's1-title':'🌊 قصتي مع القصر الصغير',
+    's1-p1':'أنا بلال الهيشو، من أبناء القصر الصغير الأصيلين — البلدة الساحلية الصغيرة في أقصى شمال المغرب على مضيق جبل طارق.',
+    's1-p2':'بدأت رحلتي مع التصوير من شغف حقيقي بتوثيق جمال منطقتي التي لا تأخذ حقها من الاهتمام السياحي رغم ما تمتلكه من كنوز.',
+    's1-p3':'انطلقت بكاميرا بسيطة وشغف كبير، وأصبح لدي اليوم جمهور يتجاوز <strong>77,000 متابع</strong> على Facebook.',
+    'sk1-t':'التصوير الطبيعي والبحري', 'sk1-d':'لقطات احترافية للشواطئ والمناظر الطبيعية',
+    'sk2-t':'التوثيق المرئي', 'sk2-d':'توثيق الحياة اليومية والتراث البحري',
+    'sk3-t':'إنشاء المحتوى الرقمي', 'sk3-d':'مواقع، مقالات سياحية، محتوى بـ 3 لغات',
+    'sk4-t':'الترويج السياحي', 'sk4-d':'تعريف العالم بجمال شمال المغرب',
+    'mission-title':'🎯 رسالتي',
+    'mission-text':'أؤمن بأن القصر الصغير وشمال المغرب يستحقان مكانة سياحية أكبر. رسالتي تسليط الضوء على هذه المنطقة المخفية وجعلها وجهة سياحية معروفة عالمياً.',
+    'cta-title':'هل تريد التعاون معنا؟',
+    'cta-desc':'سواء كنت مصوراً أو صاحب نشاط تجاري — يسعدني التواصل معك',
+    'cta-btn1':'📢 إعلن معنا', 'cta-btn2':'💬 تواصل عبر WhatsApp', 'cta-btn3':'🖼️ شاهد أعمالي',
+    'f-col1-title':'🔗 المواقع', 'f-col2-title':'🛠️ خدمات', 'f-col3-title':'📄 قانوني',
+    f1:'الرئيسية', f2:'الدليل السياحي', f3:'معرض الصور', f4:'المدونة',
+    f5:'متجر الصور', f6:'إعلن معنا', f7:'الطقس والبحر', f8:'مواقيت الصلاة',
+    f9:'سياسة الخصوصية', f10:'اتفاقية الصور', f11:'من أنا'
+  },
+  fr: {
+    dir:'ltr', 'logo-ar':'Ksar Sghir',
+    n1:'🏠 Accueil', n2:'🗺️ Tourisme', n3:'📸 Galerie', n4:'✍️ Blog',
+    n5:'🛒 Boutique', n6:'📢 Publicité', n7:'🌤️ Météo',
+    'profile-name':'Bilal El Hichou',
+    'profile-title':'📷 Photographe professionnel • Ksar Sghir Lens',
+    st1:'abonnés Facebook', st2:'photos professionnelles', st3:'sites web', st4:'articles touristiques',
+    's1-title':'🌊 Mon histoire avec Ksar Sghir',
+    's1-p1':"Je suis Bilal El Hichou, originaire de Ksar Sghir — cette petite ville côtière à l'extrême nord du Maroc sur le détroit de Gibraltar.",
+    's1-p2':"Ma passion pour la photographie est née d'un désir sincère de documenter la beauté de ma région, qui ne reçoit pas l'attention touristique qu'elle mérite.",
+    's1-p3':"Parti d'un simple appareil photo et d'une grande passion, j'ai aujourd'hui une communauté de plus de <strong>77 000 abonnés</strong> sur Facebook.",
+    'sk1-t':'Photographie nature & mer', 'sk1-d':'Clichés professionnels des plages et paysages',
+    'sk2-t':'Documentation visuelle', 'sk2-d':'Vie quotidienne et patrimoine maritime',
+    'sk3-t':'Création de contenu digital', 'sk3-d':'Sites web, articles en 3 langues',
+    'sk4-t':'Promotion touristique', 'sk4-d':'Faire connaître le nord du Maroc au monde',
+    'mission-title':'🎯 Ma mission',
+    'mission-text':"Je crois que Ksar Sghir et le nord du Maroc méritent une place touristique bien plus grande. Ma mission est de mettre en lumière cette région cachée et d'en faire une destination reconnue mondialement.",
+    'cta-title':'Vous souhaitez collaborer ?',
+    'cta-desc':"Que vous soyez photographe, entrepreneur ou passionné de la région — je serais ravi d'échanger",
+    'cta-btn1':'📢 Annoncez avec nous', 'cta-btn2':'💬 WhatsApp', 'cta-btn3':'🖼️ Voir mon travail',
+    'f-col1-title':'🔗 Sites', 'f-col2-title':'🛠️ Services', 'f-col3-title':'📄 Légal',
+    f1:'Accueil', f2:'Guide touristique', f3:'Galerie', f4:'Blog',
+    f5:'Boutique photos', f6:'Publicité', f7:'Météo & Mer', f8:'Horaires Prière',
+    f9:'Confidentialité', f10:'Accord photos', f11:'À propos'
+  },
+  en: {
+    dir:'ltr', 'logo-ar':'Ksar Sghir',
+    n1:'🏠 Home', n2:'🗺️ Tourism', n3:'📸 Gallery', n4:'✍️ Blog',
+    n5:'🛒 Store', n6:'📢 Advertise', n7:'🌤️ Weather',
+    'profile-name':'Bilal El Hichou',
+    'profile-title':'📷 Professional Photographer • Ksar Sghir Lens',
+    st1:'Facebook followers', st2:'professional photos', st3:'websites', st4:'tourism articles',
+    's1-title':'🌊 My Story with Ksar Sghir',
+    's1-p1':"I'm Bilal El Hichou, a native of Ksar Sghir — this small coastal town at the far north of Morocco on the Strait of Gibraltar.",
+    's1-p2':"My photography journey began from a genuine passion to document the beauty of my region, which doesn't receive the tourism attention it deserves despite its rare natural and historical treasures.",
+    's1-p3':"Starting with a simple camera and great passion, I now have a community of over <strong>77,000 followers</strong> on Facebook.",
+    'sk1-t':'Nature & Marine Photography', 'sk1-d':'Professional shots of beaches and landscapes',
+    'sk2-t':'Visual Documentation', 'sk2-d':'Daily life and maritime heritage',
+    'sk3-t':'Digital Content Creation', 'sk3-d':'Websites, articles in 3 languages',
+    'sk4-t':'Tourism Promotion', 'sk4-d':'Introducing northern Morocco to the world',
+    'mission-title':'🎯 My Mission',
+    'mission-text':"I believe Ksar Sghir and northern Morocco deserve a much greater tourist profile. My mission is to shine a light on this hidden region and make it a globally recognized destination.",
+    'cta-title':'Want to collaborate?',
+    'cta-desc':"Whether you are a photographer, business owner, or passionate about the region — I'd love to connect",
+    'cta-btn1':'📢 Advertise with us', 'cta-btn2':'💬 WhatsApp', 'cta-btn3':'🖼️ See my work',
+    'f-col1-title':'🔗 Sites', 'f-col2-title':'🛠️ Services', 'f-col3-title':'📄 Legal',
+    f1:'Home', f2:'Tourist Guide', f3:'Gallery', f4:'Blog',
+    f5:'Photo Store', f6:'Advertise', f7:'Weather & Sea', f8:'Prayer Times',
+    f9:'Privacy Policy', f10:'Photo Agreement', f11:'About Me'
+  }
+};
+
+function setL(lang) {
+  var t = L[lang];
+  document.documentElement.setAttribute('dir', t.dir);
+  document.body.setAttribute('dir', t.dir);
+  Object.keys(t).forEach(function(id) {
+    if (id === 'dir') return;
+    var el = document.getElementById(id);
+    if (el) el.innerHTML = t[id];
+  });
+  document.querySelectorAll('.lb').forEach(function(b) {
+    b.classList.remove('on');
+    if (b.getAttribute('onclick') === "setL('" + lang + "')") b.classList.add('on');
+  });
+  try { localStorage.setItem('ksl', lang); } catch(e) {}
+}
+
+function toggleTheme() {
+  var isLight = document.body.classList.toggle('light');
+  document.getElementById('theme-btn').textContent = isLight ? '🌙' : '☀️';
+  try { localStorage.setItem('kst', isLight ? 'light' : 'dark'); } catch(e) {}
+}
+
+(function() {
+  var lang = 'ar', theme = 'dark';
+  try { lang = localStorage.getItem('ksl') || 'ar'; theme = localStorage.getItem('kst') || 'dark'; } catch(e) {}
+  if (theme === 'light') { document.body.classList.add('light'); document.getElementById('theme-btn').textContent = '🌙'; }
+  setL(lang);
+})();
+</script>
+</body>
+</html>
 
