@@ -1,1 +1,353 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سياسة الخصوصية | Politique de Confidentialité | Privacy Policy — Ksar Sghir</title>
+<meta name="description" content="سياسة الخصوصية لموقع القصر الصغير — كيف نجمع ونستخدم بياناتك.">
+<link href='https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap' rel='stylesheet'/>
+<style>
+:root {
+  --bg: #0a0f1a;
+  --bg2: #16213e;
+  --bg3: #1a2a40;
+  --text: #e0e0e0;
+  --text2: #aaa;
+  --text3: #777;
+  --border: rgba(0,180,216,0.15);
+  --accent: #00b4d8;
+  --header-bg: linear-gradient(135deg,#1a1a2e,#16213e);
+}
+body.light {
+  --bg: #f5f7fa;
+  --bg2: #ffffff;
+  --bg3: #eef1f5;
+  --text: #1a1a2e;
+  --text2: #555;
+  --text3: #999;
+  --border: rgba(0,180,216,0.2);
+  --accent: #0096c7;
+  --header-bg: linear-gradient(135deg,#fff,#f0f4f8);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; transition:all 0.3s; }
+
+/* HEADER */
+header { background:var(--header-bg); height:60px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:2px solid var(--accent); position:sticky; top:0; z-index:100; box-shadow:0 2px 10px rgba(0,0,0,0.2); }
+.logo { text-decoration:none; display:flex; align-items:center; gap:10px; }
+.logo-ar { font-size:18px; font-weight:900; color:var(--accent); }
+.logo-en { font-size:9px; color:var(--text3); letter-spacing:3px; }
+.hright { display:flex; align-items:center; gap:8px; }
+.lang-sw { display:flex; gap:4px; }
+.lb { background:transparent; border:1px solid var(--border); color:var(--text2); font-size:11px; font-weight:700; padding:4px 9px; border-radius:10px; cursor:pointer; font-family:'Tajawal',sans-serif; transition:all 0.2s; }
+.lb.on { background:var(--accent); color:#fff; border-color:var(--accent); }
+.theme-btn { background:transparent; border:1px solid var(--border); color:var(--text2); width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; transition:all 0.2s; }
+.theme-btn:hover { border-color:var(--accent); color:var(--accent); }
+
+/* NAV */
+nav { background:var(--bg2); border-bottom:1px solid var(--border); padding:0 20px; display:flex; align-items:center; gap:5px; overflow-x:auto; }
+.nav-link { color:var(--text2); text-decoration:none; font-size:12px; font-weight:600; padding:12px 14px; white-space:nowrap; border-bottom:2px solid transparent; transition:all 0.2s; }
+.nav-link:hover, .nav-link.on { color:var(--accent); border-bottom-color:var(--accent); }
+
+/* HERO */
+.hero { background:linear-gradient(135deg,var(--bg2),var(--bg3)); padding:50px 20px 35px; text-align:center; border-bottom:1px solid var(--border); }
+.hero-icon { font-size:50px; margin-bottom:15px; }
+.hero h1 { font-size:clamp(22px,4vw,30px); font-weight:900; color:var(--text); margin-bottom:8px; }
+.hero p { color:var(--text2); font-size:13px; }
+.last-update { display:inline-block; background:rgba(0,180,216,0.1); border:1px solid var(--border); color:var(--accent); font-size:11px; padding:4px 14px; border-radius:20px; margin-top:12px; }
+
+/* CONTAINER */
+.container { max-width:800px; margin:0 auto; padding:30px 20px; }
+
+/* SECTIONS */
+.section { background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:25px; margin-bottom:20px; transition:all 0.3s; }
+.section:hover { border-color:var(--accent); }
+.section h2 { font-size:17px; font-weight:700; color:var(--accent); margin-bottom:12px; display:flex; align-items:center; gap:10px; }
+.section p { color:var(--text2); font-size:14px; margin-bottom:10px; }
+.section ul { list-style:none; padding:0; }
+.section ul li { color:var(--text2); font-size:14px; padding:6px 0; border-bottom:1px solid var(--border); display:flex; align-items:flex-start; gap:8px; }
+.section ul li:last-child { border-bottom:none; }
+.section ul li::before { content:'◆'; color:var(--accent); font-size:8px; margin-top:6px; flex-shrink:0; }
+
+/* CONTACT BOX */
+.contact-box { background:linear-gradient(135deg,var(--bg3),var(--bg2)); border:1px solid var(--border); border-radius:14px; padding:25px; text-align:center; margin-top:25px; }
+.contact-box h3 { font-size:16px; font-weight:700; color:var(--text); margin-bottom:8px; }
+.contact-box p { color:var(--text2); font-size:13px; margin-bottom:15px; }
+.contact-btn { display:inline-block; background:var(--accent); color:#fff; padding:10px 25px; border-radius:25px; text-decoration:none; font-size:13px; font-weight:700; font-family:'Tajawal',sans-serif; transition:all 0.3s; }
+.contact-btn:hover { opacity:0.85; transform:translateY(-2px); }
+
+/* FOOTER */
+footer { background:var(--bg2); border-top:1px solid var(--border); padding:25px 20px 15px; margin-top:20px; }
+.footer-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:800px; margin:0 auto 20px; }
+.footer-col h4 { font-size:13px; font-weight:700; color:var(--accent); margin-bottom:10px; }
+.footer-col a { display:block; color:var(--text3); text-decoration:none; font-size:12px; margin-bottom:6px; transition:color 0.2s; }
+.footer-col a:hover { color:var(--accent); }
+.footer-bottom { text-align:center; padding-top:15px; border-top:1px solid var(--border); }
+.footer-copy { font-size:11px; color:var(--text3); }
+.footer-copy span { color:var(--accent); }
+
+@media(max-width:600px) {
+  .footer-grid { grid-template-columns:1fr 1fr; }
+  .footer-col:last-child { grid-column:span 2; }
+  nav { gap:0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="https://www.ksarsghir.com" class="logo">
+    <div>
+      <div class="logo-ar" id="logo-ar">القصر الصغير</div>
+      <div class="logo-en">KSAR SGHIR</div>
+    </div>
+  </a>
+  <div class="hright">
+    <div class="lang-sw">
+      <button class="lb on" onclick="setL('ar')">AR</button>
+      <button class="lb" onclick="setL('fr')">FR</button>
+      <button class="lb" onclick="setL('en')">EN</button>
+    </div>
+    <button class="theme-btn" onclick="toggleTheme()" id="theme-btn" title="تغيير المظهر">🌙</button>
+  </div>
+</header>
+
+<nav id="main-nav">
+  <a href="https://www.ksarsghir.com" class="nav-link" id="n1">🏠 الرئيسية</a>
+  <a href="https://tourism.ksarsghir.com" class="nav-link" id="n2">🗺️ السياحة</a>
+  <a href="https://gallery.ksarsghir.com" class="nav-link" id="n3">📸 المعرض</a>
+  <a href="https://blog.ksarsghir.com" class="nav-link" id="n4">✍️ المدونة</a>
+  <a href="https://store.ksarsghir.com" class="nav-link" id="n5">🛒 المتجر</a>
+  <a href="https://advertise.ksarsghir.com" class="nav-link" id="n6">📢 إعلن معنا</a>
+  <a href="https://meteo.ksarsghir.com" class="nav-link" id="n7">🌤️ الطقس</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-icon">🔒</div>
+  <h1 id="hero-title">سياسة الخصوصية</h1>
+  <p id="hero-desc">نلتزم بحماية خصوصيتك وبياناتك الشخصية</p>
+  <span class="last-update" id="last-update">📅 آخر تحديث: يونيو 2026</span>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <h2 id="s1-title">📋 مقدمة</h2>
+    <p id="s1-text">يسعدنا في موقع القصر الصغير (ksarsghir.com) وجميع مواقعنا الفرعية أن نوضح لزوارنا الكرام سياسة الخصوصية المتبعة. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية وفق المعايير الدولية المعتمدة. باستخدام موقعنا، فإنك توافق على الشروط الواردة في هذه السياسة.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="s2-title">📊 المعلومات التي نجمعها</h2>
+    <ul id="s2-list">
+      <li>بيانات التصفح التلقائية: عنوان IP، نوع المتصفح، الصفحات المزارة، ومدة الزيارة</li>
+      <li>ملفات الارتباط (Cookies): لتحسين تجربة التصفح وحفظ تفضيلات اللغة</li>
+      <li>بيانات موقع الطقس: الموقع الجغرافي العام (المدينة فقط) لعرض الطقس المحلي</li>
+      <li>بيانات التفاعل: الصفحات المزارة وأنماط التصفح لتحسين المحتوى</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2 id="s3-title">🎯 كيف نستخدم بياناتك</h2>
+    <ul id="s3-list">
+      <li>تحسين محتوى الموقع وتجربة المستخدم</li>
+      <li>عرض الطقس وأوقات الصلاة المحلية بدقة</li>
+      <li>تحليل إحصائيات الزيارات لتطوير الخدمات</li>
+      <li>حماية الموقع من الاستخدام غير المشروع</li>
+      <li>لا نبيع بياناتك لأي طرف ثالث — أبداً</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2 id="s4-title">🍪 ملفات الارتباط (Cookies)</h2>
+    <p id="s4-text">نستخدم ملفات Cookies ضرورية فقط لحفظ تفضيلات اللغة والمظهر (ليلي/نهاري). لا نستخدم Cookies تسويقية أو لتتبع السلوك الإعلاني. يمكنك تعطيل الـ Cookies من إعدادات متصفحك في أي وقت.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="s5-title">🖼️ حقوق الصور والمحتوى</h2>
+    <p id="s5-text">جميع الصور المنشورة على موقع القصر الصغير ومعرضه الرقمي هي ملك حصري لـ <strong>بلال الهيشو — Ksar Sghir Lens</strong>. يُحظر استخدام أي صورة أو محتوى دون إذن كتابي مسبق. لطلب استخدام الصور، يرجى التواصل معنا.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="s6-title">🔗 روابط خارجية</h2>
+    <p id="s6-text">قد يحتوي موقعنا على روابط لمواقع خارجية مثل طنجة المتوسط ووزارة الأوقاف. لسنا مسؤولين عن سياسات خصوصية هذه المواقع ونشجعك على قراءة سياساتها عند زيارتها.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="s7-title">👶 حماية الأطفال</h2>
+    <p id="s7-text">موقعنا مخصص للجمهور العام ولا يجمع أي بيانات من الأطفال دون سن 13 سنة. إذا كنت ولياً للأمر وتعتقد أن طفلك قدّم بيانات لنا، يرجى التواصل معنا فوراً.</p>
+  </div>
+
+  <div class="section">
+    <h2 id="s8-title">✏️ تحديثات السياسة</h2>
+    <p id="s8-text">قد نحدث هذه السياسة من وقت لآخر. سيتم الإشارة إلى تاريخ آخر تحديث في أعلى الصفحة. ننصح بمراجعة هذه الصفحة دورياً للاطلاع على أي تغييرات.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3 id="contact-title">📬 تواصل معنا</h3>
+    <p id="contact-desc">لأي استفسار حول سياسة الخصوصية أو طلب حذف بياناتك</p>
+    <a href="https://advertise.ksarsghir.com" class="contact-btn" id="contact-btn">تواصل معنا ←</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4 id="f-col1-title">🔗 المواقع</h4>
+      <a href="https://www.ksarsghir.com" id="f1">الرئيسية</a>
+      <a href="https://tourism.ksarsghir.com" id="f2">الدليل السياحي</a>
+      <a href="https://gallery.ksarsghir.com" id="f3">معرض الصور</a>
+      <a href="https://blog.ksarsghir.com" id="f4">المدونة</a>
+    </div>
+    <div class="footer-col">
+      <h4 id="f-col2-title">🛠️ خدمات</h4>
+      <a href="https://store.ksarsghir.com" id="f5">متجر الصور</a>
+      <a href="https://advertise.ksarsghir.com" id="f6">إعلن معنا</a>
+      <a href="https://meteo.ksarsghir.com" id="f7">الطقس والبحر</a>
+      <a href="https://salat.ksarsghir.com" id="f8">مواقيت الصلاة</a>
+    </div>
+    <div class="footer-col">
+      <h4 id="f-col3-title">📄 قانوني</h4>
+      <a href="#" class="on" id="f9">سياسة الخصوصية</a>
+      <a href="#" id="f10">اتفاقية استخدام الصور</a>
+      <a href="#" id="f11">من أنا</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 <span>Ksar Sghir</span> • Bilal El Hichou — All rights reserved</div>
+  </div>
+</footer>
+
+<script>
+var L = {
+  ar: {
+    dir:'rtl',
+    'logo-ar':'القصر الصغير',
+    n1:'🏠 الرئيسية', n2:'🗺️ السياحة', n3:'📸 المعرض', n4:'✍️ المدونة',
+    n5:'🛒 المتجر', n6:'📢 إعلن معنا', n7:'🌤️ الطقس',
+    'hero-title':'سياسة الخصوصية',
+    'hero-desc':'نلتزم بحماية خصوصيتك وبياناتك الشخصية',
+    'last-update':'📅 آخر تحديث: يونيو 2026',
+    's1-title':'📋 مقدمة',
+    's1-text':'يسعدنا في موقع القصر الصغير (ksarsghir.com) وجميع مواقعنا الفرعية أن نوضح سياسة الخصوصية المتبعة. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. باستخدام موقعنا، فإنك توافق على الشروط الواردة في هذه السياسة.',
+    's2-title':'📊 المعلومات التي نجمعها',
+    's2-list':'<li>بيانات التصفح التلقائية: عنوان IP، نوع المتصفح، الصفحات المزارة</li><li>ملفات الارتباط (Cookies): لتحسين تجربة التصفح وحفظ تفضيلات اللغة</li><li>بيانات موقع الطقس: الموقع الجغرافي العام لعرض الطقس المحلي</li><li>بيانات التفاعل: أنماط التصفح لتحسين المحتوى</li>',
+    's3-title':'🎯 كيف نستخدم بياناتك',
+    's3-list':'<li>تحسين محتوى الموقع وتجربة المستخدم</li><li>عرض الطقس وأوقات الصلاة المحلية بدقة</li><li>تحليل إحصائيات الزيارات لتطوير الخدمات</li><li>لا نبيع بياناتك لأي طرف ثالث — أبداً</li>',
+    's4-title':'🍪 ملفات الارتباط (Cookies)',
+    's4-text':'نستخدم Cookies ضرورية فقط لحفظ تفضيلات اللغة والمظهر. لا نستخدم Cookies تسويقية. يمكنك تعطيلها من إعدادات متصفحك.',
+    's5-title':'🖼️ حقوق الصور والمحتوى',
+    's5-text':'جميع الصور ملك حصري لـ <strong>بلال الهيشو — Ksar Sghir Lens</strong>. يُحظر الاستخدام دون إذن كتابي مسبق.',
+    's6-title':'🔗 روابط خارجية',
+    's6-text':'قد يحتوي موقعنا على روابط خارجية. لسنا مسؤولين عن سياسات خصوصية تلك المواقع.',
+    's7-title':'👶 حماية الأطفال',
+    's7-text':'موقعنا لا يجمع بيانات من الأطفال دون سن 13. تواصل معنا إذا كان لديك قلق بهذا الشأن.',
+    's8-title':'✏️ تحديثات السياسة',
+    's8-text':'قد نحدث هذه السياسة من وقت لآخر. ننصح بمراجعتها دورياً.',
+    'contact-title':'📬 تواصل معنا',
+    'contact-desc':'لأي استفسار حول سياسة الخصوصية أو طلب حذف بياناتك',
+    'contact-btn':'تواصل معنا ←',
+    'f-col1-title':'🔗 المواقع', 'f-col2-title':'🛠️ خدمات', 'f-col3-title':'📄 قانوني',
+    f1:'الرئيسية', f2:'الدليل السياحي', f3:'معرض الصور', f4:'المدونة',
+    f5:'متجر الصور', f6:'إعلن معنا', f7:'الطقس والبحر', f8:'مواقيت الصلاة',
+    f9:'سياسة الخصوصية', f10:'اتفاقية الصور', f11:'من أنا'
+  },
+  fr: {
+    dir:'ltr',
+    'logo-ar':'Ksar Sghir',
+    n1:'🏠 Accueil', n2:'🗺️ Tourisme', n3:'📸 Galerie', n4:'✍️ Blog',
+    n5:'🛒 Boutique', n6:'📢 Publicité', n7:'🌤️ Météo',
+    'hero-title':'Politique de Confidentialité',
+    'hero-desc':'Nous nous engageons à protéger votre vie privée',
+    'last-update':'📅 Dernière mise à jour: Juin 2026',
+    's1-title':'📋 Introduction',
+    's1-text':"Nous, le site Ksar Sghir (ksarsghir.com) et tous nos sous-domaines, souhaitons vous informer de notre politique de confidentialité. Nous respectons votre vie privée et nous engageons à protéger vos données personnelles. En utilisant notre site, vous acceptez les conditions décrites dans cette politique.",
+    's2-title':'📊 Informations collectées',
+    's2-list':"<li>Données de navigation automatiques: adresse IP, type de navigateur, pages visitées</li><li>Cookies: pour améliorer l'expérience et sauvegarder les préférences de langue</li><li>Données météo: localisation générale pour afficher la météo locale</li><li>Données d'interaction: habitudes de navigation pour améliorer le contenu</li>",
+    's3-title':'🎯 Comment nous utilisons vos données',
+    's3-list':"<li>Améliorer le contenu et l'expérience utilisateur</li><li>Afficher la météo et les horaires de prière locaux</li><li>Analyser les statistiques de visites</li><li>Nous ne vendons jamais vos données à des tiers</li>",
+    's4-title':'🍪 Cookies',
+    's4-text':"Nous utilisons uniquement des cookies essentiels pour sauvegarder les préférences de langue et de thème. Vous pouvez les désactiver dans les paramètres de votre navigateur.",
+    's5-title':'🖼️ Droits des photos et contenus',
+    's5-text':"Toutes les photos publiées sur Ksar Sghir sont la propriété exclusive de <strong>Bilal El Hichou — Ksar Sghir Lens</strong>. Toute utilisation sans autorisation écrite préalable est interdite.",
+    's6-title':'🔗 Liens externes',
+    's6-text':"Notre site peut contenir des liens vers des sites externes. Nous ne sommes pas responsables de leurs politiques de confidentialité.",
+    's7-title':'👶 Protection des enfants',
+    's7-text':"Notre site ne collecte pas de données des enfants de moins de 13 ans. Contactez-nous si vous avez des préoccupations.",
+    's8-title':'✏️ Mises à jour',
+    's8-text':"Nous pouvons mettre à jour cette politique périodiquement. Nous vous recommandons de la consulter régulièrement.",
+    'contact-title':'📬 Contactez-nous',
+    'contact-desc':"Pour toute question sur cette politique ou pour demander la suppression de vos données",
+    'contact-btn':'Nous contacter ←',
+    'f-col1-title':'🔗 Sites', 'f-col2-title':'🛠️ Services', 'f-col3-title':'📄 Légal',
+    f1:'Accueil', f2:'Guide touristique', f3:'Galerie photos', f4:'Blog',
+    f5:'Boutique photos', f6:'Publicité', f7:'Météo & Mer', f8:'Horaires Prière',
+    f9:'Politique de Confidentialité', f10:'Accord photos', f11:'À propos'
+  },
+  en: {
+    dir:'ltr',
+    'logo-ar':'Ksar Sghir',
+    n1:'🏠 Home', n2:'🗺️ Tourism', n3:'📸 Gallery', n4:'✍️ Blog',
+    n5:'🛒 Store', n6:'📢 Advertise', n7:'🌤️ Weather',
+    'hero-title':'Privacy Policy',
+    'hero-desc':'We are committed to protecting your privacy and personal data',
+    'last-update':'📅 Last updated: June 2026',
+    's1-title':'📋 Introduction',
+    's1-text':"We at Ksar Sghir (ksarsghir.com) and all our sub-domains wish to explain our privacy policy. We respect your privacy and are committed to protecting your personal data. By using our site, you agree to the terms outlined in this policy.",
+    's2-title':'📊 Information We Collect',
+    's2-list':'<li>Automatic browsing data: IP address, browser type, pages visited</li><li>Cookies: to improve browsing experience and save language preferences</li><li>Weather location data: general geographic location for local weather display</li><li>Interaction data: browsing patterns to improve content</li>',
+    's3-title':'🎯 How We Use Your Data',
+    's3-list':'<li>Improve website content and user experience</li><li>Display accurate local weather and prayer times</li><li>Analyze visit statistics to develop services</li><li>We never sell your data to third parties — ever</li>',
+    's4-title':'🍪 Cookies',
+    's4-text':"We use only essential cookies to save language and theme preferences. You can disable cookies in your browser settings at any time.",
+    's5-title':'🖼️ Photo and Content Rights',
+    's5-text':'All photos published on Ksar Sghir are the exclusive property of <strong>Bilal El Hichou — Ksar Sghir Lens</strong>. Use without prior written permission is strictly prohibited.',
+    's6-title':'🔗 External Links',
+    's6-text':"Our site may contain links to external websites. We are not responsible for their privacy policies.",
+    's7-title':'👶 Children\'s Protection',
+    's7-text':"Our site does not collect data from children under 13. Contact us if you have concerns.",
+    's8-title':'✏️ Policy Updates',
+    's8-text':'We may update this policy periodically. We recommend reviewing it regularly.',
+    'contact-title':'📬 Contact Us',
+    'contact-desc':'For any questions about this policy or to request deletion of your data',
+    'contact-btn':'Contact Us ←',
+    'f-col1-title':'🔗 Sites', 'f-col2-title':'🛠️ Services', 'f-col3-title':'📄 Legal',
+    f1:'Home', f2:'Tourist Guide', f3:'Photo Gallery', f4:'Blog',
+    f5:'Photo Store', f6:'Advertise', f7:'Weather & Sea', f8:'Prayer Times',
+    f9:'Privacy Policy', f10:'Photo Agreement', f11:'About Me'
+  }
+};
+
+function setL(lang) {
+  var t = L[lang];
+  document.documentElement.setAttribute('dir', t.dir);
+  document.body.setAttribute('dir', t.dir);
+  Object.keys(t).forEach(function(id) {
+    if (id === 'dir') return;
+    var el = document.getElementById(id);
+    if (el) el.innerHTML = t[id];
+  });
+  document.querySelectorAll('.lb').forEach(function(b) {
+    b.classList.remove('on');
+    if (b.getAttribute('onclick') === "setL('" + lang + "')") b.classList.add('on');
+  });
+  try { localStorage.setItem('ksl', lang); } catch(e) {}
+}
+
+function toggleTheme() {
+  var isLight = document.body.classList.toggle('light');
+  document.getElementById('theme-btn').textContent = isLight ? '🌙' : '☀️';
+  try { localStorage.setItem('kst', isLight ? 'light' : 'dark'); } catch(e) {}
+}
+
+(function() {
+  var lang = 'ar';
+  var theme = 'dark';
+  try { lang = localStorage.getItem('ksl') || 'ar'; theme = localStorage.getItem('kst') || 'dark'; } catch(e) {}
+  if (theme === 'light') { document.body.classList.add('light'); document.getElementById('theme-btn').textContent = '🌙'; }
+  setL(lang);
+})();
+</script>
+</body>
+</html>
