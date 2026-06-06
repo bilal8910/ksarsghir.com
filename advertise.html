@@ -1,93 +1,218 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>إعلن معنا — القصر الصغير | Advertise | Publicité</title>
-<meta name="description" content="إعلن على موقع القصر الصغير — وصول لآلاف الزوار. Advertise on Ksar Sghir website.">
-<meta name="keywords" content="إعلان القصر الصغير, publicité ksar sghir, advertise ksar sghir, bilal el hichou">
-<meta name="author" content="Bilal El Hichou">
-<link href='https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap' rel='stylesheet'/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>إعلن معنا — القصر الصغير | Advertise with us | Ksar Sghir</title>
+<meta name="description" content="أعلن مع موقع القصر الصغير — وصول لـ 77K متابع على Facebook. إعلانات سياحية، تجارية ومحلية بأسعار مناسبة."/>
+<meta name="keywords" content="إعلان القصر الصغير, advertise ksar sghir, publicité ksar sghir, bilal el hichou"/>
+<meta property="og:title" content="إعلن معنا — Ksar Sghir"/>
+<meta property="og:url" content="https://www.ksarsghir.com/advertise.html"/>
+<link rel="canonical" href="https://www.ksarsghir.com/advertise.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
 <style>
+:root { --bg:#0a0f1a; --bg2:#16213e; --bg3:#1a2a40; --text:#e0e0e0; --text2:#aaa; --text3:#666; --border:rgba(0,180,216,0.15); --accent:#00b4d8; }
+body.light { --bg:#f0f4f8; --bg2:#fff; --bg3:#e8edf5; --text:#1a1a2e; --text2:#555; --text3:#999; --border:rgba(0,180,216,0.2); }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Tajawal',sans-serif; background:#0a0f1a; color:#fff; }
+body { font-family:"Tajawal",sans-serif; background:var(--bg); color:var(--text); line-height:1.8; transition:background 0.3s,color 0.3s; }
 
-header { background:linear-gradient(135deg,#1a1a2e,#16213e); height:60px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:2px solid #00b4d8; position:sticky; top:0; z-index:100; }
+/* HEADER */
+header { background:var(--bg2); height:60px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:2px solid var(--accent); position:sticky; top:0; z-index:200; }
 .logo { text-decoration:none; }
-.logo-ar { font-size:18px; font-weight:900; color:#00b4d8; display:block; }
-.logo-en { font-size:9px; color:#888; letter-spacing:3px; display:block; }
+.logo-ar { font-size:18px; font-weight:900; color:var(--accent); display:block; }
+.logo-en { font-size:9px; color:var(--text3); letter-spacing:3px; display:block; }
 .hright { display:flex; align-items:center; gap:8px; }
-.back { color:#00b4d8; text-decoration:none; font-size:12px; font-weight:600; padding:5px 12px; border:1px solid rgba(0,180,216,0.3); border-radius:20px; }
-.lang-sw { display:flex; gap:4px; }
-.lb { background:transparent; border:1px solid rgba(0,180,216,0.3); color:#aaa; font-size:11px; font-weight:700; padding:4px 9px; border-radius:10px; cursor:pointer; font-family:'Tajawal',sans-serif; }
-.lb.on { background:#00b4d8; color:#fff; border-color:#00b4d8; }
+.lang-sw { display:flex; gap:3px; }
+.lb { background:transparent; border:1px solid var(--border); color:var(--text2); font-size:11px; font-weight:700; padding:4px 9px; border-radius:10px; cursor:pointer; font-family:"Tajawal",sans-serif; transition:all 0.2s; }
+.lb.on { background:var(--accent); color:#fff; border-color:var(--accent); }
+.theme-btn { background:transparent; border:1px solid var(--border); color:var(--text2); width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; }
+.back { color:var(--accent); text-decoration:none; font-size:12px; font-weight:600; padding:5px 12px; border:1px solid var(--border); border-radius:20px; }
 
-.hero { background:linear-gradient(160deg,#0d1b2a,#1a3a5c,#0d1b2a); padding:50px 20px 45px; text-align:center; border-bottom:1px solid rgba(0,180,216,0.15); }
-.hero h1 { font-size:clamp(26px,6vw,48px); font-weight:900; margin-bottom:10px; }
-.hero h1 em { color:#00b4d8; font-style:normal; }
-.hero p { color:#90e0ef; font-size:14px; max-width:500px; margin:0 auto 15px; line-height:1.7; }
-.hero-badge { display:inline-block; background:rgba(0,180,216,0.15); border:1px solid #00b4d8; color:#00b4d8; font-size:11px; padding:5px 16px; border-radius:20px; letter-spacing:2px; }
+/* NAV */
+nav { background:var(--bg2); border-bottom:1px solid var(--border); padding:0 15px; display:flex; align-items:center; gap:2px; overflow-x:auto; scrollbar-width:none; position:sticky; top:60px; z-index:199; }
+nav::-webkit-scrollbar { display:none; }
+.nav-link { color:var(--text2); text-decoration:none; font-size:12px; font-weight:600; padding:10px 12px; white-space:nowrap; border-bottom:2px solid transparent; transition:all 0.2s; }
+.nav-link:hover, .nav-link.active { color:var(--accent); border-bottom-color:var(--accent); }
 
-.stats { display:flex; background:#16213e; border-bottom:1px solid rgba(0,180,216,0.2); }
-.stat { flex:1; text-align:center; padding:18px 10px; border-left:1px solid rgba(0,180,216,0.15); }
+/* HERO */
+.article-hero { background:linear-gradient(180deg,rgba(74,20,140,0.5),var(--bg)); padding:80px 20px 40px; text-align:center; border-bottom:1px solid var(--border); }
+.article-badge { display:inline-block; background:rgba(0,180,216,0.15); border:1px solid var(--accent); color:var(--accent); font-size:11px; font-weight:700; padding:4px 14px; border-radius:20px; margin-bottom:15px; }
+.article-hero h1 { font-size:clamp(24px,4.5vw,36px); font-weight:900; color:#fff; margin-bottom:10px; }
+
+/* CONTAINER */
+.container { max-width:800px; margin:40px auto; padding:0 20px; }
+.content-section { margin-bottom:35px; }
+.content-section h2 { font-size:20px; color:var(--text); margin-bottom:15px; display:flex; align-items:center; gap:10px; }
+.content-section h2::before { content:""; width:4px; height:22px; background:var(--accent); display:inline-block; border-radius:2px; flex-shrink:0; }
+.content-section p { color:var(--text2); font-size:15px; margin-bottom:15px; }
+
+.features { display:grid; grid-template-columns:repeat(2,1fr); gap:15px; margin:20px 0; }
+.feature-card { background:var(--bg2); padding:20px; border-radius:12px; text-align:center; border:1px solid var(--border); transition:all 0.3s; }
+.feature-card:hover { border-color:var(--accent); transform:translateY(-2px); }
+.feature-card .icon { font-size:32px; margin-bottom:10px; }
+.feature-card b { color:var(--accent); display:block; margin-bottom:6px; font-size:14px; }
+.feature-card span { color:var(--text2); font-size:12px; }
+
+.activities-list { list-style:none; margin:15px 0; }
+.activities-list li { background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:15px; margin-bottom:10px; color:var(--text2); font-size:14px; display:flex; gap:12px; align-items:flex-start; transition:all 0.3s; }
+.activities-list li:hover { border-color:var(--accent); }
+
+.tip-box { background:rgba(0,180,216,0.06); border-right:4px solid var(--accent); padding:20px; border-radius:8px; margin:25px 0; }
+html[dir="ltr"] .tip-box { border-left:4px solid var(--accent); border-right:none; }
+.tip-box h3 { color:var(--accent); margin-bottom:15px; font-size:16px; }
+.tip-box ul { list-style:none; padding:0; }
+.tip-box li { margin-bottom:12px; color:var(--text2); font-size:14px; }
+
+.info-box { background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:20px; margin-bottom:30px; }
+.info-box-title { font-weight:700; color:var(--accent); margin-bottom:15px; font-size:16px; }
+.info-box ul { list-style:none; }
+.info-box li { font-size:14px; color:var(--text2); margin-bottom:10px; display:flex; align-items:flex-start; gap:8px; }
+
+/* RELATED */
+.related-section { margin:35px 0; padding-top:20px; border-top:1px solid var(--border); }
+.related-title { font-size:16px; font-weight:700; color:var(--accent); margin-bottom:15px; }
+.related-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.related-card { background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:12px; text-align:center; text-decoration:none; transition:all 0.2s; }
+.related-card:hover { border-color:var(--accent); transform:translateY(-2px); }
+.related-card .r-icon { font-size:24px; margin-bottom:6px; }
+.related-card .r-name { font-size:12px; color:var(--text); font-weight:600; }
+
+.tags-container { margin:35px 0 20px; padding-top:20px; border-top:1px solid var(--border); }
+.tags-title { font-size:13px; color:var(--text3); margin-bottom:10px; font-weight:700; }
+.tags-list { display:flex; flex-wrap:wrap; gap:8px; }
+.tag-item { background:var(--bg2); color:var(--accent); font-size:11px; padding:4px 12px; border-radius:15px; text-decoration:none; border:1px solid var(--border); transition:0.3s; }
+.tag-item:hover { background:var(--accent); color:#fff; }
+
+.cta-box { background:linear-gradient(135deg,#0d1b2a,#1a3a5c); padding:35px 20px; border-radius:14px; text-align:center; margin-top:40px; border:1px solid rgba(0,180,216,0.2); }
+.cta-box h3 { font-size:20px; font-weight:700; margin-bottom:10px; color:#fff; }
+.cta-box p { font-size:13px; color:#90e0ef; margin-bottom:22px; }
+.btn { padding:12px 28px; font-size:13px; font-weight:700; text-decoration:none; border-radius:25px; display:inline-block; background:var(--accent); color:#fff; transition:0.3s; font-family:"Tajawal",sans-serif; }
+.btn:hover { background:#0096c7; transform:translateY(-2px); }
+
+/* FOOTER */
+footer { background:var(--bg2); padding:25px 20px 15px; border-top:1px solid var(--border); margin-top:40px; }
+.footer-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:800px; margin:0 auto 15px; }
+.footer-col h4 { font-size:13px; font-weight:700; color:var(--accent); margin-bottom:10px; }
+.footer-col a { display:block; color:var(--text3); text-decoration:none; font-size:12px; margin-bottom:6px; transition:color 0.2s; }
+.footer-col a:hover { color:var(--accent); }
+.footer-bottom { text-align:center; padding-top:15px; border-top:1px solid var(--border); font-size:11px; color:var(--text3); }
+.footer-bottom span { color:var(--accent); }
+
+@media(max-width:600px) {
+  .features { grid-template-columns:1fr; }
+  .related-grid { grid-template-columns:1fr 1fr; }
+  .footer-grid { grid-template-columns:1fr 1fr; }
+}
+
+
+/* ARTICLE SPECIFIC */
+.article-hero {
+  background: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(10,15,26,0.95)),
+  url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCkqUCKpOBemhVIbmIZluQkSPkYzqEOWjdNSaUS-UbDZQe4gr4kdCJIhljzkxXYjGiqGNRHlhgJZKFK0JAdH8_bV8guWVjI9DKj5IdM4oJhzJWpTademtNST97CrfNVdegmdIzxBsEVpF0yMkFGFheNH2xKyEmM890Ugi4j21msm1HsI283YC_Kdis9qs/s2252/8589.jpg') center/cover no-repeat;
+  padding:80px 20px 40px; text-align:center; border-bottom:1px solid var(--border);
+}
+.article-badge { display:inline-block; background:rgba(0,180,216,0.15); border:1px solid var(--accent); color:var(--accent); font-size:11px; font-weight:700; padding:4px 14px; border-radius:20px; margin-bottom:15px; }
+.article-hero h1 { font-size:clamp(26px,4.5vw,38px); font-weight:900; margin-bottom:15px; color:#fff; }
+.container { max-width:800px; margin:40px auto; padding:0 20px; }
+.content-section { margin-bottom:35px; }
+.content-section h2 { font-size:22px; color:var(--text); margin-bottom:15px; display:flex; align-items:center; gap:10px; }
+.content-section h2::before { content:""; width:4px; height:22px; background:var(--accent); display:inline-block; border-radius:2px; flex-shrink:0; }
+.content-section p { color:var(--text2); font-size:15.5px; margin-bottom:15px; text-align:justify; }
+.info-box { background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:20px; margin-bottom:35px; }
+.info-box-title { font-weight:700; color:var(--accent); margin-bottom:15px; font-size:16px; }
+.info-box ul { list-style:none; }
+.info-box li { font-size:14.5px; color:var(--text2); margin-bottom:10px; display:flex; align-items:flex-start; gap:8px; }
+.note-box { background:rgba(255,183,3,0.05); border-right:4px solid #ffb703; padding:15px; border-radius:6px; margin:30px 0; color:#e5a900; font-size:14.5px; }
+html[dir="ltr"] .note-box { border-left:4px solid #ffb703; border-right:none; }
+.photo-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:20px 0; }
+.photo-grid img { width:100%; border-radius:12px; object-fit:cover; aspect-ratio:4/3; border:1px solid var(--border); }
+.related-section { margin:30px 0; padding-top:20px; border-top:1px solid var(--border); }
+.related-title { font-size:15px; font-weight:700; color:var(--accent); margin-bottom:12px; }
+.related-grid { display:flex; gap:10px; flex-wrap:wrap; }
+.related-link { background:var(--bg2); border:1px solid var(--border); color:var(--text2); text-decoration:none; padding:8px 14px; border-radius:10px; font-size:13px; transition:all 0.2s; }
+.related-link:hover { border-color:var(--accent); color:var(--accent); }
+.tags-container { margin:35px 0 20px; padding-top:20px; border-top:1px solid var(--border); }
+.tags-title { font-size:13px; color:var(--text3); margin-bottom:10px; font-weight:700; }
+.tags-list { display:flex; flex-wrap:wrap; gap:8px; }
+.tag-item { background:var(--bg2); color:var(--accent); font-size:12px; padding:4px 12px; border-radius:15px; text-decoration:none; border:1px solid var(--border); transition:0.3s; }
+.tag-item:hover { background:var(--accent); color:#fff; }
+.cta-box { background:linear-gradient(135deg,#0d1b2a,#1a3a5c); padding:35px 20px; border-radius:14px; text-align:center; margin-top:40px; border:1px solid rgba(0,180,216,0.2); }
+.cta-box h3 { font-size:20px; font-weight:700; margin-bottom:10px; color:#fff; }
+.cta-box p { font-size:13px; color:#90e0ef; margin-bottom:22px; }
+.btn { padding:12px 28px; font-size:13px; font-weight:700; text-decoration:none; border-radius:25px; display:inline-block; background:var(--accent); color:#fff; transition:0.3s; font-family:"Tajawal",sans-serif; }
+.btn:hover { background:#0096c7; transform:translateY(-2px); }
+@media(max-width:600px) { .photo-grid { grid-template-columns:1fr; } .footer-grid { grid-template-columns:1fr 1fr; } }
+
+
+.hero { background:linear-gradient(160deg,#0d1b2a,#1a3a5c,#0d1b2a); padding:60px 20px 50px; text-align:center; border-bottom:1px solid var(--border); }
+.hero h1 { font-size:clamp(26px,5vw,42px); font-weight:900; color:#fff; margin-bottom:10px; }
+.hero h1 em { color:var(--accent); font-style:normal; }
+.hero p { color:#90e0ef; font-size:14px; margin-bottom:20px; max-width:500px; margin-left:auto; margin-right:auto; line-height:1.7; }
+
+/* STATS */
+.stats-bar { display:flex; background:var(--bg2); border-bottom:1px solid var(--border); }
+.stat { flex:1; text-align:center; padding:18px 10px; border-left:1px solid var(--border); }
 .stat:last-child { border-left:none; }
-.stat-num { font-size:24px; font-weight:900; color:#00b4d8; }
-.stat-label { font-size:10px; color:#aaa; margin-top:3px; letter-spacing:1px; }
+.stat-num { font-size:26px; font-weight:900; color:var(--accent); }
+.stat-label { font-size:11px; color:var(--text2); margin-top:3px; }
 
-.section { max-width:1100px; margin:0 auto; padding:40px 20px; }
-.section-title { font-size:22px; font-weight:700; color:#fff; margin-bottom:25px; display:flex; align-items:center; gap:10px; }
-.section-title::before { content:''; width:4px; height:24px; background:#00b4d8; border-radius:2px; display:inline-block; flex-shrink:0; }
+.container { max-width:900px; margin:0 auto; padding:40px 20px; }
 
-.packages-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
-.package-card { background:#16213e; border:1px solid rgba(0,180,216,0.15); border-radius:16px; overflow:hidden; transition:all 0.3s; position:relative; }
-.package-card:hover { border-color:#00b4d8; transform:translateY(-4px); box-shadow:0 12px 30px rgba(0,180,216,0.15); }
-.package-card.featured { border-color:#00b4d8; }
-.package-card.featured::before { content:'⭐ الأكثر طلباً'; position:absolute; top:15px; left:15px; background:#00b4d8; color:#fff; font-size:10px; font-weight:700; padding:4px 12px; border-radius:20px; letter-spacing:1px; }
-.package-header { padding:25px 20px 15px; text-align:center; border-bottom:1px solid rgba(0,180,216,0.1); }
-.package-icon { font-size:40px; margin-bottom:12px; }
-.package-name { font-size:18px; font-weight:700; color:#fff; margin-bottom:6px; }
-.package-price { font-size:32px; font-weight:900; color:#00b4d8; }
-.package-price span { font-size:14px; color:#aaa; font-weight:400; }
-.package-body { padding:20px; }
-.package-features { list-style:none; margin-bottom:20px; }
-.package-features li { padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.05); font-size:13px; color:#ccc; display:flex; align-items:center; gap:8px; }
-.package-features li::before { content:'✅'; font-size:12px; }
-.pkg-btn { display:block; text-align:center; background:linear-gradient(135deg,#023e8a,#00b4d8); color:#fff; font-size:13px; font-weight:700; padding:12px 20px; border-radius:25px; text-decoration:none; font-family:'Tajawal',sans-serif; transition:all 0.3s; }
-.pkg-btn:hover { transform:scale(1.03); box-shadow:0 6px 20px rgba(0,180,216,0.4); }
+.section-title { font-size:22px; font-weight:700; color:var(--text); margin-bottom:20px; display:flex; align-items:center; gap:10px; }
+.section-title::before { content:""; width:4px; height:24px; background:var(--accent); border-radius:2px; }
 
-.why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; }
-.why-card { background:#16213e; border:1px solid rgba(0,180,216,0.1); border-radius:14px; padding:20px; text-align:center; transition:all 0.3s; }
-.why-card:hover { border-color:#00b4d8; }
-.why-icon { font-size:36px; margin-bottom:12px; }
-.why-title { font-size:14px; font-weight:700; color:#fff; margin-bottom:8px; }
-.why-text { font-size:12px; color:#aaa; line-height:1.6; }
+/* PACKAGES */
+.packages-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:50px; }
+.pkg { background:var(--bg2); border:1px solid var(--border); border-radius:16px; padding:25px 20px; text-align:center; transition:all 0.3s; position:relative; }
+.pkg:hover { transform:translateY(-4px); border-color:var(--accent); box-shadow:0 10px 30px rgba(0,180,216,0.15); }
+.pkg.popular { border-color:var(--accent); }
+.pkg-badge { position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--accent); color:#fff; font-size:10px; font-weight:700; padding:4px 16px; border-radius:20px; white-space:nowrap; }
+.pkg-icon { font-size:40px; margin-bottom:12px; }
+.pkg-name { font-size:16px; font-weight:700; color:var(--text); margin-bottom:6px; }
+.pkg-desc { font-size:12px; color:var(--text2); margin-bottom:18px; line-height:1.6; }
+.pkg-price { font-size:32px; font-weight:900; color:var(--accent); margin-bottom:5px; }
+.pkg-price small { font-size:13px; color:var(--text2); font-weight:400; }
+.pkg-features { list-style:none; margin:15px 0 20px; text-align:right; }
+.pkg-features li { font-size:13px; color:var(--text2); padding:6px 0; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:8px; }
+.pkg-features li:last-child { border-bottom:none; }
+.pkg-features li::before { content:"✓"; color:var(--accent); font-weight:700; flex-shrink:0; }
+.order-btn { display:block; background:var(--accent); color:#fff; text-decoration:none; font-family:"Tajawal",sans-serif; font-size:13px; font-weight:700; padding:11px 20px; border-radius:25px; transition:all 0.3s; }
+.order-btn:hover { background:#0096c7; transform:scale(1.03); }
+.order-btn.outline { background:transparent; border:2px solid var(--accent); color:var(--accent); }
+.order-btn.outline:hover { background:var(--accent); color:#fff; }
 
-.contact-section { background:linear-gradient(135deg,#0d1b2a,#1a3a5c); padding:55px 20px; text-align:center; border-top:1px solid rgba(0,180,216,0.2); }
-.contact-section h2 { font-size:28px; font-weight:700; color:#fff; margin-bottom:10px; }
-.contact-section p { color:#90e0ef; font-size:14px; margin-bottom:30px; max-width:450px; margin-left:auto; margin-right:auto; line-height:1.7; }
-.contact-btns { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
-.btn { padding:13px 30px; font-size:13px; font-weight:700; font-family:'Tajawal',sans-serif; cursor:pointer; border:none; border-radius:25px; text-decoration:none; display:inline-block; transition:all 0.3s; }
-.btn-wa { background:#25d366; color:#fff; }
-.btn-wa:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(37,211,102,0.4); }
-.btn-email { background:rgba(0,180,216,0.15); border:1px solid #00b4d8; color:#00b4d8; }
-.btn-email:hover { background:#00b4d8; color:#fff; }
+/* AUDIENCE */
+.audience-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:15px; margin-bottom:50px; }
+.audience-card { background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:20px; display:flex; gap:15px; align-items:flex-start; }
+.audience-icon { font-size:36px; flex-shrink:0; }
+.audience-title { font-size:14px; font-weight:700; color:var(--text); margin-bottom:5px; }
+.audience-desc { font-size:12px; color:var(--text2); line-height:1.6; }
 
-.divider { height:1px; background:linear-gradient(90deg,transparent,rgba(0,180,216,0.3),transparent); }
+/* PLATFORMS */
+.platforms { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; margin-bottom:50px; }
+.platform { background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:20px; text-align:center; }
+.platform-icon { font-size:32px; margin-bottom:8px; }
+.platform-name { font-size:13px; font-weight:700; color:var(--text); margin-bottom:4px; }
+.platform-num { font-size:20px; font-weight:900; color:var(--accent); }
+.platform-desc { font-size:11px; color:var(--text2); margin-top:3px; }
 
-footer { background:#060c14; padding:18px 20px; text-align:center; border-top:1px solid #16213e; }
-.footer-links { display:flex; justify-content:center; gap:15px; flex-wrap:wrap; margin-bottom:10px; }
-.footer-links a { color:#555; text-decoration:none; font-size:12px; }
-.footer-links a:hover { color:#00b4d8; }
-.footer-copy { font-size:11px; color:#555; }
-.footer-copy span { color:#00b4d8; }
+/* CTA */
+.cta-section { background:linear-gradient(135deg,#0d1b2a,#1a3a5c); border-radius:16px; padding:40px 30px; text-align:center; border:1px solid rgba(0,180,216,0.2); margin-bottom:20px; }
+.cta-section h2 { font-size:24px; font-weight:700; color:#fff; margin-bottom:10px; }
+.cta-section p { color:#90e0ef; font-size:13px; margin-bottom:25px; }
+.cta-btns { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+.wa-btn { background:#25d366; color:#fff; padding:13px 28px; border-radius:25px; font-family:"Tajawal",sans-serif; font-weight:700; font-size:14px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; transition:all 0.3s; }
+.wa-btn:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(37,211,102,0.4); }
+
+.divider { height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent); margin:40px 0; }
 
 @media(max-width:768px) {
   .packages-grid { grid-template-columns:1fr; }
-  .why-grid { grid-template-columns:repeat(2,1fr); }
-  .lang-sw { display:flex; }
-  .lb { font-size:10px; padding:3px 7px; }
-  .stats { flex-wrap:wrap; }
+  .audience-grid { grid-template-columns:1fr; }
+  .platforms { grid-template-columns:1fr 1fr; }
+  .stats-bar { flex-wrap:wrap; }
   .stat { min-width:50%; }
+  .footer-grid { grid-template-columns:1fr 1fr; }
 }
 </style>
 </head>
@@ -95,8 +220,8 @@ footer { background:#060c14; padding:18px 20px; text-align:center; border-top:1p
 
 <header>
   <a href="https://www.ksarsghir.com" class="logo">
-    <span class="logo-ar" id="lname">إعلن معنا</span>
-    <span class="logo-en">KSAR SGHIR ADS</span>
+    <span class="logo-ar" id="logo-ar">القصر الصغير</span>
+    <span class="logo-en">KSAR SGHIR</span>
   </a>
   <div class="hright">
     <div class="lang-sw">
@@ -104,244 +229,304 @@ footer { background:#060c14; padding:18px 20px; text-align:center; border-top:1p
       <button class="lb" onclick="setL('fr')">FR</button>
       <button class="lb" onclick="setL('en')">EN</button>
     </div>
-    <a href="https://www.ksarsghir.com" class="back" id="lback">← الرئيسية</a>
+    <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">🌙</button>
   </div>
 </header>
 
+<nav>
+  <a href="https://www.ksarsghir.com" class="nav-link" id="n1">🏠 الرئيسية</a>
+  <a href="https://tourism.ksarsghir.com" class="nav-link active" id="n2">🗺️ السياحة</a>
+  <a href="https://gallery.ksarsghir.com" class="nav-link" id="n3">📸 المعرض</a>
+  <a href="https://blog.ksarsghir.com" class="nav-link" id="n4">✍️ المدونة</a>
+  <a href="https://store.ksarsghir.com" class="nav-link" id="n5">🛒 المتجر</a>
+  <a href="https://www.ksarsghir.com/advertise.html" class="nav-link" id="n6">📢 إعلن معنا</a>
+  <a href="https://meteo.ksarsghir.com" class="nav-link" id="n7">🌤️ الطقس</a>
+  <a href="https://salat.ksarsghir.com" class="nav-link" id="n8">🕌 الصلاة</a>
+</nav>
+
 <div class="hero">
-  <h1 id="htitle">إعلن <em>معنا</em></h1>
-  <p id="hdesc">وصول مباشر لآلاف الزوار المهتمين بمنطقة القصر الصغير — سياح، مقيمون، ومهتمون بالمنطقة</p>
-  <div class="hero-badge" id="hbadge">KSAR SGHIR • MAROC</div>
+  <h1 id="hero-title">📢 إعلن <em>معنا</em></h1>
+  <p id="hero-desc">وصول مباشر لـ 77,000 متابع من محبي القصر الصغير وشمال المغرب — الوجهة الإعلانية الأولى في المنطقة</p>
 </div>
 
-<div class="stats">
-  <div class="stat"><div class="stat-num">21K</div><div class="stat-label">FACEBOOK</div></div>
-  <div class="stat"><div class="stat-num">2K</div><div class="stat-label">INSTAGRAM</div></div>
-  <div class="stat"><div class="stat-num">+500</div><div class="stat-label" id="s3">صورة</div></div>
-  <div class="stat"><div class="stat-num">2017</div><div class="stat-label" id="s4">منذ</div></div>
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num">77K</div><div class="stat-label" id="s1">متابع فيسبوك</div></div>
+  <div class="stat"><div class="stat-num">8</div><div class="stat-label" id="s2">مواقع رقمية</div></div>
+  <div class="stat"><div class="stat-num">141+</div><div class="stat-label" id="s3">صورة احترافية</div></div>
+  <div class="stat"><div class="stat-num">2</div><div class="stat-label" id="s4">صفحة فيسبوك</div></div>
 </div>
 
-<div class="section">
-  <div class="section-title" id="pkg-title">📢 باقات الإعلان</div>
+<div class="container">
+
+  <!-- PLATFORMS -->
+  <div class="section-title" id="plat-title">📱 منصاتنا</div>
+  <div class="platforms">
+    <div class="platform">
+      <div class="platform-icon">📘</div>
+      <div class="platform-name" id="p1n">Ksarsghircity</div>
+      <div class="platform-num">21K</div>
+      <div class="platform-desc" id="p1d">أخبار ومحتوى محلي</div>
+    </div>
+    <div class="platform">
+      <div class="platform-icon">📸</div>
+      <div class="platform-name" id="p2n">Ksar Sghir Lens</div>
+      <div class="platform-num">56K</div>
+      <div class="platform-desc" id="p2d">تصوير ومناظر طبيعية</div>
+    </div>
+    <div class="platform">
+      <div class="platform-icon">🌐</div>
+      <div class="platform-name" id="p3n">Ksarsghir.com</div>
+      <div class="platform-num">8+</div>
+      <div class="platform-desc" id="p3d">مواقع رقمية متخصصة</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PACKAGES -->
+  <div class="section-title" id="pkg-title">💼 باقات الإعلان</div>
   <div class="packages-grid">
 
-    <div class="package-card">
-      <div class="package-header">
-        <div class="package-icon">🏪</div>
-        <div class="package-name" id="p1-name">باقة أساسية</div>
-        <div class="package-price">300 <span id="p1-cur">درهم/شهر</span></div>
-      </div>
-      <div class="package-body">
-        <ul class="package-features" id="p1-features">
-          <li>إعلان على الصفحة الرئيسية</li>
-          <li>ذكر على صفحة Facebook</li>
-          <li>صورة احترافية واحدة</li>
-          <li>رابط لموقعك أو واتساب</li>
-        </ul>
-        <a href="https://wa.me/212708053745?text=أريد%20الباقة%20الأساسية" class="pkg-btn" id="p1-btn" target="_blank">اطلب الباقة</a>
-      </div>
+    <div class="pkg">
+      <div class="pkg-icon">📌</div>
+      <div class="pkg-name" id="pkg1-name">بوست مخصص</div>
+      <div class="pkg-desc" id="pkg1-desc">منشور احترافي على صفحاتنا مع صورة جذابة ونص مقنع</div>
+      <div class="pkg-price" id="pkg1-price">150 <small id="pkg1-cur">درهم</small></div>
+      <ul class="pkg-features" id="pkg1-feats">
+        <li>منشور على صفحتين</li>
+        <li>صورة احترافية</li>
+        <li>نص إعلاني جذاب</li>
+        <li>وصول 5K-15K شخص</li>
+      </ul>
+      <a href="https://wa.me/212708053745?text=أريد%20الاستفسار%20عن%20باقة%20بوست%20مخصص" class="order-btn outline" id="pkg1-btn" target="_blank">اطلب الآن</a>
     </div>
 
-    <div class="package-card featured">
-      <div class="package-header">
-        <div class="package-icon">⭐</div>
-        <div class="package-name" id="p2-name">باقة مميزة</div>
-        <div class="package-price">600 <span id="p2-cur">درهم/شهر</span></div>
-      </div>
-      <div class="package-body">
-        <ul class="package-features" id="p2-features">
-          <li>إعلان في أعلى الصفحة الرئيسية</li>
-          <li>3 منشورات على Facebook وInstagram</li>
-          <li>3 صور احترافية</li>
-          <li>وصف مفصل للنشاط</li>
-          <li>رابط دائم في قسم السياحة</li>
-        </ul>
-        <a href="https://wa.me/212708053745?text=أريد%20الباقة%20المميزة" class="pkg-btn" id="p2-btn" target="_blank">اطلب الباقة</a>
-      </div>
+    <div class="pkg popular">
+      <div class="pkg-badge" id="pkg2-badge">⭐ الأكثر طلباً</div>
+      <div class="pkg-icon">🚀</div>
+      <div class="pkg-name" id="pkg2-name">باقة أسبوعية</div>
+      <div class="pkg-desc" id="pkg2-desc">3 منشورات على مدار أسبوع مع تغطية كاملة للمنصات</div>
+      <div class="pkg-price" id="pkg2-price">350 <small id="pkg2-cur">درهم</small></div>
+      <ul class="pkg-features" id="pkg2-feats">
+        <li>3 منشورات في أسبوع</li>
+        <li>على كل المنصات</li>
+        <li>ستوري + بوست</li>
+        <li>وصول 20K-40K شخص</li>
+        <li>تقرير الأداء</li>
+      </ul>
+      <a href="https://wa.me/212708053745?text=أريد%20الاستفسار%20عن%20الباقة%20الأسبوعية" class="order-btn" id="pkg2-btn" target="_blank">اطلب الآن</a>
     </div>
 
-    <div class="package-card">
-      <div class="package-header">
-        <div class="package-icon">📸</div>
-        <div class="package-name" id="p3-name">باقة التصوير</div>
-        <div class="package-price">800 <span id="p3-cur">درهم</span></div>
-      </div>
-      <div class="package-body">
-        <ul class="package-features" id="p3-features">
-          <li>جلسة تصوير احترافية لنشاطك</li>
-          <li>10 صور عالية الجودة</li>
-          <li>نشر على جميع المنصات</li>
-          <li>ملفات رقمية جاهزة للطباعة</li>
-        </ul>
-        <a href="https://wa.me/212708053745?text=أريد%20باقة%20التصوير" class="pkg-btn" id="p3-btn" target="_blank">اطلب الباقة</a>
-      </div>
-    </div>
-
-    <div class="package-card">
-      <div class="package-header">
-        <div class="package-icon">🏆</div>
-        <div class="package-name" id="p4-name">باقة شاملة</div>
-        <div class="package-price">1200 <span id="p4-cur">درهم/شهر</span></div>
-      </div>
-      <div class="package-body">
-        <ul class="package-features" id="p4-features">
-          <li>كل مميزات الباقة المميزة</li>
-          <li>جلسة تصوير كاملة</li>
-          <li>إعلان دائم في كل الصفحات</li>
-          <li>تقرير شهري بعدد الزيارات</li>
-          <li>أولوية في المنشورات الجديدة</li>
-        </ul>
-        <a href="https://wa.me/212708053745?text=أريد%20الباقة%20الشاملة" class="pkg-btn" id="p4-btn" target="_blank">اطلب الباقة</a>
-      </div>
+    <div class="pkg">
+      <div class="pkg-icon">🏆</div>
+      <div class="pkg-name" id="pkg3-name">باقة شهرية</div>
+      <div class="pkg-desc" id="pkg3-desc">حضور شهري كامل على كل منصاتنا الرقمية والاجتماعية</div>
+      <div class="pkg-price" id="pkg3-price">900 <small id="pkg3-cur">درهم</small></div>
+      <ul class="pkg-features" id="pkg3-feats">
+        <li>12+ منشور في شهر</li>
+        <li>بانر على الموقع</li>
+        <li>صفحة مخصصة بموقعنا</li>
+        <li>وصول 77K متابع</li>
+        <li>تقارير أسبوعية</li>
+        <li>أولوية النشر</li>
+      </ul>
+      <a href="https://wa.me/212708053745?text=أريد%20الاستفسار%20عن%20الباقة%20الشهرية" class="order-btn outline" id="pkg3-btn" target="_blank">اطلب الآن</a>
     </div>
 
   </div>
-</div>
 
-<div class="divider"></div>
+  <div class="divider"></div>
 
-<div class="section">
-  <div class="section-title" id="why-title">💡 لماذا تعلن معنا؟</div>
-  <div class="why-grid">
-    <div class="why-card">
-      <div class="why-icon">🎯</div>
-      <div class="why-title" id="w1-title">جمهور مستهدف</div>
-      <div class="why-text" id="w1-text">زوار مهتمون بمنطقة القصر الصغير — سياح، مقيمون، ومستثمرون</div>
+  <!-- AUDIENCE -->
+  <div class="section-title" id="aud-title">🎯 من هو جمهورنا؟</div>
+  <div class="audience-grid">
+    <div class="audience-card">
+      <div class="audience-icon">🧳</div>
+      <div><div class="audience-title" id="a1t">السياح والمسافرون</div><div class="audience-desc" id="a1d">زوار من المغرب وأوروبا يبحثون عن وجهات شمال المغرب وشواطئ مضيق جبل طارق</div></div>
     </div>
-    <div class="why-card">
-      <div class="why-icon">📸</div>
-      <div class="why-title" id="w2-title">صور احترافية</div>
-      <div class="why-text" id="w2-text">بعدسة بلال الهيشو — صور تجذب العملاء وترفع مستوى نشاطك</div>
+    <div class="audience-card">
+      <div class="audience-icon">🏠</div>
+      <div><div class="audience-title" id="a2t">السكان المحليون</div><div class="audience-desc" id="a2d">أبناء القصر الصغير والمناطق المجاورة — طنجة، الفنيدق، تطوان</div></div>
     </div>
-    <div class="why-card">
-      <div class="why-icon">📱</div>
-      <div class="why-title" id="w3-title">حضور رقمي قوي</div>
-      <div class="why-text" id="w3-text">موقع + Facebook 21K + Instagram 2K = وصول واسع للجمهور</div>
+    <div class="audience-card">
+      <div class="audience-icon">🍽️</div>
+      <div><div class="audience-title" id="a3t">المطاعم والمقاهي</div><div class="audience-desc" id="a3d">مثالي للأعمال التجارية المحلية التي تستهدف السياح والمقيمين</div></div>
     </div>
-    <div class="why-card">
-      <div class="why-icon">💰</div>
-      <div class="why-title" id="w4-title">أسعار معقولة</div>
-      <div class="why-text" id="w4-text">باقات مناسبة لجميع الميزانيات — من المحل الصغير للفندق الكبير</div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">🌍</div>
-      <div class="why-title" id="w5-title">ثلاث لغات</div>
-      <div class="why-text" id="w5-text">موقعنا بالعربية والفرنسية والإنجليزية — يصل للسياح الأجانب</div>
-    </div>
-    <div class="why-card">
-      <div class="why-icon">⚡</div>
-      <div class="why-title" id="w6-title">نتائج سريعة</div>
-      <div class="why-text" id="w6-text">نشر فوري على جميع المنصات — زيارات حقيقية من اليوم الأول</div>
+    <div class="audience-card">
+      <div class="audience-icon">🏨</div>
+      <div><div class="audience-title" id="a4t">الفنادق والإقامة</div><div class="audience-desc" id="a4d">الباحثون عن إقامة في شمال المغرب بمحيط القصر الصغير</div></div>
     </div>
   </div>
-</div>
 
-<div class="contact-section">
-  <h2 id="cta-title">📩 تواصل معنا الآن</h2>
-  <p id="cta-desc">للاستفسار عن الأسعار أو تخصيص باقة مناسبة لنشاطك — نحن هنا للمساعدة</p>
-  <div class="contact-btns">
-    <a href="https://wa.me/212708053745?text=أريد%20الإعلان%20على%20موقع%20القصر%20الصغير" class="btn btn-wa" id="cta-wa" target="_blank">📱 واتساب</a>
-    <a href="mailto:contact@ksarsghir.com" class="btn btn-email" id="cta-email">✉️ البريد الإلكتروني</a>
+  <!-- CTA -->
+  <div class="cta-section">
+    <h2 id="cta-title">🤝 هل أنت مهتم بالإعلان؟</h2>
+    <p id="cta-desc">تواصل معنا مباشرة على واتساب للحصول على عرض مخصص يناسب ميزانيتك وأهدافك</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/212708053745?text=مرحبا%20بلال%20أريد%20الاستفسار%20عن%20الإعلان%20في%20موقع%20القصر%20الصغير" class="wa-btn" target="_blank" id="cta-wa">📱 تواصل على واتساب</a>
+    </div>
   </div>
+
 </div>
 
 <footer>
-  <div class="footer-links">
-    <a href="https://www.ksarsghir.com">الرئيسية</a>
-    <a href="https://gallery.ksarsghir.com">المعرض</a>
-    <a href="https://store.ksarsghir.com">المتجر</a>
-    <a href="https://tourism.ksarsghir.com">السياحة</a>
-    <a href="https://wa.me/212708053745">تواصل</a>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4 id="fc1">🗺️ المواقع السياحية</h4>
+      <a href="https://tourism.ksarsghir.com/plage.html" id="fl1">شاطئ القصر الصغير</a>
+      <a href="https://tourism.ksarsghir.com/belyounech.html" id="fl2">قرية بليونش</a>
+      <a href="https://tourism.ksarsghir.com/port.html" id="fl3">ميناء الصيد</a>
+      <a href="https://tourism.ksarsghir.com/dalia.html" id="fl4">شاطئ الدالية</a>
+    </div>
+    <div class="footer-col">
+      <h4 id="fc2">🔗 المواقع</h4>
+      <a href="https://www.ksarsghir.com" id="fl5">الرئيسية</a>
+      <a href="https://gallery.ksarsghir.com" id="fl6">معرض الصور</a>
+      <a href="https://blog.ksarsghir.com" id="fl7">المدونة</a>
+      <a href="https://meteo.ksarsghir.com" id="fl8">الطقس والبحر</a>
+    </div>
+    <div class="footer-col">
+      <h4 id="fc3">📄 معلومات</h4>
+      <a href="https://www.ksarsghir.com/about.html" id="fl9">من أنا</a>
+      <a href="https://www.ksarsghir.com/advertise.html" id="fl10">إعلن معنا</a>
+      <a href="https://www.ksarsghir.com/privacy.html" id="fl11">سياسة الخصوصية</a>
+      <a href="https://wa.me/212708053745" id="fl12">تواصل معنا</a>
+    </div>
   </div>
-  <div class="footer-copy">© 2026 <span>Ksar Sghir</span> • Bilal El Hichou</div>
+  <div class="footer-bottom">© 2026 <span>Ksar Sghir Tourism</span> • Bilal El Hichou</div>
 </footer>
 
 <script>
 var L = {
-  ar: { dir:'rtl', lname:'إعلن معنا', lback:'← الرئيسية',
-    htitle:'إعلن <em>معنا</em>',
-    hdesc:'وصول مباشر لآلاف الزوار المهتمين بمنطقة القصر الصغير — سياح، مقيمون، ومهتمون بالمنطقة',
-    hbadge:'KSAR SGHIR • MAROC', s3:'صورة', s4:'منذ',
-    'pkg-title':'📢 باقات الإعلان','p1-features':'<li>إعلان على الصفحة الرئيسية</li><li>ذكر على صفحة Facebook</li><li>صورة احترافية واحدة</li><li>رابط لموقعك أو واتساب</li>','p2-features':'<li>إعلان في أعلى الصفحة الرئيسية</li><li>3 منشورات على Facebook وInstagram</li><li>3 صور احترافية</li><li>وصف مفصل للنشاط</li><li>رابط دائم في قسم السياحة</li>','p3-features':'<li>جلسة تصوير احترافية لنشاطك</li><li>10 صور عالية الجودة</li><li>نشر على جميع المنصات</li><li>ملفات رقمية جاهزة للطباعة</li>','p4-features':'<li>كل مميزات الباقة المميزة</li><li>جلسة تصوير كاملة</li><li>إعلان دائم في كل الصفحات</li><li>تقرير شهري بعدد الزيارات</li><li>أولوية في المنشورات الجديدة</li>',
-    'p1-name':'باقة أساسية', 'p1-cur':'درهم/شهر', 'p1-btn':'اطلب الباقة',
-    'p2-name':'باقة مميزة', 'p2-cur':'درهم/شهر', 'p2-btn':'اطلب الباقة',
-    'p3-name':'باقة التصوير', 'p3-cur':'درهم', 'p3-btn':'اطلب الباقة',
-    'p4-name':'باقة شاملة', 'p4-cur':'درهم/شهر', 'p4-btn':'اطلب الباقة',
-    'why-title':'💡 لماذا تعلن معنا؟',
-    'w1-title':'جمهور مستهدف', 'w1-text':'زوار مهتمون بمنطقة القصر الصغير — سياح، مقيمون، ومستثمرون',
-    'w2-title':'صور احترافية', 'w2-text':'بعدسة بلال الهيشو — صور تجذب العملاء وترفع مستوى نشاطك',
-    'w3-title':'حضور رقمي قوي', 'w3-text':'موقع + Facebook 21K + Instagram 2K = وصول واسع للجمهور',
-    'w4-title':'أسعار معقولة', 'w4-text':'باقات مناسبة لجميع الميزانيات — من المحل الصغير للفندق الكبير',
-    'w5-title':'ثلاث لغات', 'w5-text':'موقعنا بالعربية والفرنسية والإنجليزية — يصل للسياح الأجانب',
-    'w6-title':'نتائج سريعة', 'w6-text':'نشر فوري على جميع المنصات — زيارات حقيقية من اليوم الأول',
-    'cta-title':'📩 تواصل معنا الآن',
-    'cta-desc':'للاستفسار عن الأسعار أو تخصيص باقة مناسبة لنشاطك — نحن هنا للمساعدة',
-    'cta-wa':'📱 واتساب', 'cta-email':'✉️ البريد الإلكتروني'
+  ar: { dir:"rtl", "logo-ar":"القصر الصغير",
+    n1:"🏠 الرئيسية", n2:"🗺️ السياحة", n3:"📸 المعرض", n4:"✍️ المدونة",
+    n5:"🛒 المتجر", n6:"📢 إعلن معنا", n7:"🌤️ الطقس", n8:"🕌 الصلاة",
+    "hero-title":"📢 إعلن <em>معنا</em>",
+    "hero-desc":"وصول مباشر لـ 77,000 متابع من محبي القصر الصغير وشمال المغرب — الوجهة الإعلانية الأولى في المنطقة",
+    s1:"متابع فيسبوك", s2:"مواقع رقمية", s3:"صورة احترافية", s4:"صفحة فيسبوك",
+    "plat-title":"📱 منصاتنا",
+    p1n:"Ksarsghircity", p1d:"أخبار ومحتوى محلي",
+    p2n:"Ksar Sghir Lens", p2d:"تصوير ومناظر طبيعية",
+    p3n:"Ksarsghir.com", p3d:"مواقع رقمية متخصصة",
+    "pkg-title":"💼 باقات الإعلان",
+    "pkg1-name":"بوست مخصص", "pkg1-desc":"منشور احترافي على صفحاتنا مع صورة جذابة ونص مقنع",
+    "pkg1-price":"150", "pkg1-cur":"درهم", "pkg1-btn":"اطلب الآن",
+    "pkg1-feats":"<li>منشور على صفحتين</li><li>صورة احترافية</li><li>نص إعلاني جذاب</li><li>وصول 5K-15K شخص</li>",
+    "pkg2-badge":"⭐ الأكثر طلباً",
+    "pkg2-name":"باقة أسبوعية", "pkg2-desc":"3 منشورات على مدار أسبوع مع تغطية كاملة للمنصات",
+    "pkg2-price":"350", "pkg2-cur":"درهم", "pkg2-btn":"اطلب الآن",
+    "pkg2-feats":"<li>3 منشورات في أسبوع</li><li>على كل المنصات</li><li>ستوري + بوست</li><li>وصول 20K-40K شخص</li><li>تقرير الأداء</li>",
+    "pkg3-name":"باقة شهرية", "pkg3-desc":"حضور شهري كامل على كل منصاتنا الرقمية والاجتماعية",
+    "pkg3-price":"900", "pkg3-cur":"درهم", "pkg3-btn":"اطلب الآن",
+    "pkg3-feats":"<li>12+ منشور في شهر</li><li>بانر على الموقع</li><li>صفحة مخصصة بموقعنا</li><li>وصول 77K متابع</li><li>تقارير أسبوعية</li><li>أولوية النشر</li>",
+    "aud-title":"🎯 من هو جمهورنا؟",
+    a1t:"السياح والمسافرون", a1d:"زوار من المغرب وأوروبا يبحثون عن وجهات شمال المغرب",
+    a2t:"السكان المحليون", a2d:"أبناء القصر الصغير والمناطق المجاورة — طنجة، الفنيدق، تطوان",
+    a3t:"المطاعم والمقاهي", a3d:"مثالي للأعمال التجارية المحلية التي تستهدف السياح والمقيمين",
+    a4t:"الفنادق والإقامة", a4d:"الباحثون عن إقامة في شمال المغرب بمحيط القصر الصغير",
+    "cta-title":"🤝 هل أنت مهتم بالإعلان؟",
+    "cta-desc":"تواصل معنا مباشرة على واتساب للحصول على عرض مخصص يناسب ميزانيتك",
+    "cta-wa":"📱 تواصل على واتساب",
+    fc1:"🗺️ المواقع السياحية", fc2:"🔗 المواقع", fc3:"📄 معلومات",
+    fl1:"شاطئ القصر الصغير", fl2:"قرية بليونش", fl3:"ميناء الصيد", fl4:"شاطئ الدالية",
+    fl5:"الرئيسية", fl6:"معرض الصور", fl7:"المدونة", fl8:"الطقس والبحر",
+    fl9:"من أنا", fl10:"إعلن معنا", fl11:"سياسة الخصوصية", fl12:"تواصل معنا"
   },
-  fr: { dir:'ltr', lname:'Publicité', lback:'← Accueil',
-    htitle:'Annoncez <em>avec nous</em>',
-    hdesc:'Accès direct à des milliers de visiteurs intéressés par la région de Ksar Sghir — touristes, résidents et investisseurs',
-    hbadge:'KSAR SGHIR • MAROC', s3:'PHOTOS', s4:'DEPUIS',
-    'pkg-title':'📢 Forfaits publicitaires','p1-features':"<li>Annonce sur la page principale</li><li>Mention sur la page Facebook</li><li>Une photo professionnelle</li><li>Lien vers votre site ou WhatsApp</li>",'p2-features':"<li>Annonce en haut de la page principale</li><li>3 publications sur Facebook et Instagram</li><li>3 photos professionnelles</li><li>Description détaillée de l'activité</li><li>Lien permanent dans la section tourisme</li>",'p3-features':"<li>Séance photo professionnelle</li><li>10 photos haute qualité</li><li>Publication sur toutes les plateformes</li><li>Fichiers numériques prêts à imprimer</li>",'p4-features':"<li>Tous les avantages du forfait premium</li><li>Séance photo complète</li><li>Annonce permanente sur toutes les pages</li><li>Rapport mensuel des visites</li><li>Priorité dans les nouvelles publications</li>",
-    'p1-name':'Forfait de base', 'p1-cur':'DH/mois', 'p1-btn':'Commander',
-    'p2-name':'Forfait premium', 'p2-cur':'DH/mois', 'p2-btn':'Commander',
-    'p3-name':'Forfait photo', 'p3-cur':'DH', 'p3-btn':'Commander',
-    'p4-name':'Forfait complet', 'p4-cur':'DH/mois', 'p4-btn':'Commander',
-    'why-title':'💡 Pourquoi nous choisir?',
-    'w1-title':'Audience ciblée', 'w1-text':'Visiteurs intéressés par Ksar Sghir — touristes, résidents et investisseurs',
-    'w2-title':'Photos professionnelles', 'w2-text':'Par Bilal El Hichou — des photos qui attirent les clients',
-    'w3-title':'Forte présence digitale', 'w3-text':'Site + Facebook 21K + Instagram 2K = large audience',
-    'w4-title':'Prix raisonnables', 'w4-text':'Forfaits adaptés à tous les budgets — du petit commerce au grand hôtel',
-    'w5-title':'Trois langues', 'w5-text':'Notre site en arabe, français et anglais — atteint les touristes étrangers',
-    'w6-title':'Résultats rapides', 'w6-text':'Publication immédiate sur toutes les plateformes — visites réelles dès le premier jour',
-    'cta-title':'📩 Contactez-nous maintenant',
-    'cta-desc':'Pour vous renseigner sur les prix ou personnaliser un forfait adapté à votre activité',
-    'cta-wa':'📱 WhatsApp', 'cta-email':'✉️ Email'
+  fr: { dir:"ltr", "logo-ar":"Ksar Sghir",
+    n1:"🏠 Accueil", n2:"🗺️ Tourisme", n3:"📸 Galerie", n4:"✍️ Blog",
+    n5:"🛒 Boutique", n6:"📢 Publicité", n7:"🌤️ Météo", n8:"🕌 Prière",
+    "hero-title":"📢 Annoncez <em>avec nous</em>",
+    "hero-desc":"Accès direct à 77 000 abonnés passionnés de Ksar Sghir et du nord du Maroc",
+    s1:"abonnés Facebook", s2:"sites numériques", s3:"photos pro", s4:"pages Facebook",
+    "plat-title":"📱 Nos plateformes",
+    p1n:"Ksarsghircity", p1d:"Actualités locales", p2n:"Ksar Sghir Lens", p2d:"Photos et paysages", p3n:"Ksarsghir.com", p3d:"Sites numériques spécialisés",
+    "pkg-title":"💼 Formules publicitaires",
+    "pkg1-name":"Post personnalisé", "pkg1-desc":"Publication professionnelle sur nos pages avec image et texte accrocheur",
+    "pkg1-price":"150", "pkg1-cur":"DH", "pkg1-btn":"Commander",
+    "pkg1-feats":"<li>Publication sur 2 pages</li><li>Image professionnelle</li><li>Texte publicitaire</li><li>Portée 5K-15K personnes</li>",
+    "pkg2-badge":"⭐ Le plus demandé",
+    "pkg2-name":"Formule hebdomadaire", "pkg2-desc":"3 publications en une semaine sur toutes les plateformes",
+    "pkg2-price":"350", "pkg2-cur":"DH", "pkg2-btn":"Commander",
+    "pkg2-feats":"<li>3 publications par semaine</li><li>Toutes les plateformes</li><li>Story + Post</li><li>Portée 20K-40K personnes</li><li>Rapport de performance</li>",
+    "pkg3-name":"Formule mensuelle", "pkg3-desc":"Présence mensuelle complète sur toutes nos plateformes",
+    "pkg3-price":"900", "pkg3-cur":"DH", "pkg3-btn":"Commander",
+    "pkg3-feats":"<li>12+ publications/mois</li><li>Bannière sur le site</li><li>Page dédiée sur notre site</li><li>Portée 77K abonnés</li><li>Rapports hebdomadaires</li><li>Priorité de publication</li>",
+    "aud-title":"🎯 Notre audience",
+    a1t:"Touristes et voyageurs", a1d:"Visiteurs du Maroc et d'Europe cherchant des destinations au nord",
+    a2t:"Résidents locaux", a2d:"Habitants de Ksar Sghir, Tanger, Fnideq et Tétouan",
+    a3t:"Restaurants et cafés", a3d:"Idéal pour les commerces locaux ciblant touristes et résidents",
+    a4t:"Hôtels et hébergements", a4d:"Recherche d'hébergement dans le nord du Maroc",
+    "cta-title":"🤝 Intéressé par la publicité?",
+    "cta-desc":"Contactez-nous directement sur WhatsApp pour une offre personnalisée",
+    "cta-wa":"📱 Contacter sur WhatsApp",
+    fc1:"🗺️ Sites touristiques", fc2:"🔗 Sites web", fc3:"📄 Informations",
+    fl1:"Plage Ksar Sghir", fl2:"Belyounech", fl3:"Port de pêche", fl4:"Plage Dalia",
+    fl5:"Accueil", fl6:"Galerie photos", fl7:"Blog", fl8:"Météo & Mer",
+    fl9:"À propos", fl10:"Publicité", fl11:"Confidentialité", fl12:"Contact"
   },
-  en: { dir:'ltr', lname:'Advertise', lback:'← Home',
-    htitle:'Advertise <em>with us</em>',
-    hdesc:'Direct access to thousands of visitors interested in the Ksar Sghir region — tourists, residents and investors',
-    hbadge:'KSAR SGHIR • MOROCCO', s3:'PHOTOS', s4:'SINCE',
-    'pkg-title':'📢 Advertising Packages','p1-features':'<li>Ad on the main page</li><li>Mention on Facebook page</li><li>One professional photo</li><li>Link to your website or WhatsApp</li>','p2-features':'<li>Ad at the top of the main page</li><li>3 posts on Facebook and Instagram</li><li>3 professional photos</li><li>Detailed description of your business</li><li>Permanent link in the tourism section</li>','p3-features':'<li>Professional photo session for your business</li><li>10 high quality photos</li><li>Publication on all platforms</li><li>Digital files ready to print</li>','p4-features':'<li>All premium package features</li><li>Complete photo session</li><li>Permanent ad on all pages</li><li>Monthly visit report</li><li>Priority in new publications</li>',
-    'p1-name':'Basic Package', 'p1-cur':'MAD/month', 'p1-btn':'Order Now',
-    'p2-name':'Premium Package', 'p2-cur':'MAD/month', 'p2-btn':'Order Now',
-    'p3-name':'Photography Package', 'p3-cur':'MAD', 'p3-btn':'Order Now',
-    'p4-name':'Complete Package', 'p4-cur':'MAD/month', 'p4-btn':'Order Now',
-    'why-title':'💡 Why advertise with us?',
-    'w1-title':'Targeted audience', 'w1-text':'Visitors interested in Ksar Sghir — tourists, residents and investors',
-    'w2-title':'Professional photos', 'w2-text':'By Bilal El Hichou — photos that attract customers and elevate your business',
-    'w3-title':'Strong digital presence', 'w3-text':'Website + Facebook 21K + Instagram 2K = wide reach',
-    'w4-title':'Reasonable prices', 'w4-text':'Packages for all budgets — from small shops to large hotels',
-    'w5-title':'Three languages', 'w5-text':'Our site in Arabic, French and English — reaches foreign tourists',
-    'w6-title':'Fast results', 'w6-text':'Immediate publication on all platforms — real visits from day one',
-    'cta-title':'📩 Contact us now',
-    'cta-desc':'To inquire about prices or customize a package for your business — we are here to help',
-    'cta-wa':'📱 WhatsApp', 'cta-email':'✉️ Email'
+  en: { dir:"ltr", "logo-ar":"Ksar Sghir",
+    n1:"🏠 Home", n2:"🗺️ Tourism", n3:"📸 Gallery", n4:"✍️ Blog",
+    n5:"🛒 Store", n6:"📢 Advertise", n7:"🌤️ Weather", n8:"🕌 Prayer",
+    "hero-title":"📢 Advertise <em>with us</em>",
+    "hero-desc":"Direct reach to 77,000 followers who love Ksar Sghir and northern Morocco",
+    s1:"Facebook followers", s2:"digital sites", s3:"pro photos", s4:"Facebook pages",
+    "plat-title":"📱 Our platforms",
+    p1n:"Ksarsghircity", p1d:"Local news & content", p2n:"Ksar Sghir Lens", p2d:"Photography & landscapes", p3n:"Ksarsghir.com", p3d:"Specialized digital sites",
+    "pkg-title":"💼 Advertising packages",
+    "pkg1-name":"Custom post", "pkg1-desc":"Professional post on our pages with an attractive image and compelling text",
+    "pkg1-price":"150", "pkg1-cur":"MAD", "pkg1-btn":"Order now",
+    "pkg1-feats":"<li>Post on 2 pages</li><li>Professional image</li><li>Ad copywriting</li><li>Reach 5K-15K people</li>",
+    "pkg2-badge":"⭐ Most popular",
+    "pkg2-name":"Weekly package", "pkg2-desc":"3 posts over a week with full platform coverage",
+    "pkg2-price":"350", "pkg2-cur":"MAD", "pkg2-btn":"Order now",
+    "pkg2-feats":"<li>3 posts per week</li><li>All platforms</li><li>Story + Post</li><li>Reach 20K-40K people</li><li>Performance report</li>",
+    "pkg3-name":"Monthly package", "pkg3-desc":"Full monthly presence across all our digital and social platforms",
+    "pkg3-price":"900", "pkg3-cur":"MAD", "pkg3-btn":"Order now",
+    "pkg3-feats":"<li>12+ posts/month</li><li>Banner on website</li><li>Dedicated page on our site</li><li>Reach 77K followers</li><li>Weekly reports</li><li>Publication priority</li>",
+    "aud-title":"🎯 Our audience",
+    a1t:"Tourists and travelers", a1d:"Visitors from Morocco and Europe looking for northern Morocco destinations",
+    a2t:"Local residents", a2d:"Ksar Sghir, Tangier, Fnideq and Tetouan area residents",
+    a3t:"Restaurants and cafes", a3d:"Perfect for local businesses targeting tourists and residents",
+    a4t:"Hotels and accommodation", a4d:"People searching for accommodation in northern Morocco",
+    "cta-title":"🤝 Interested in advertising?",
+    "cta-desc":"Contact us directly on WhatsApp for a customized offer that fits your budget",
+    "cta-wa":"📱 Contact on WhatsApp",
+    fc1:"🗺️ Tourist Sites", fc2:"🔗 Sites", fc3:"📄 Information",
+    fl1:"Ksar Sghir Beach", fl2:"Belyounech", fl3:"Fishing Port", fl4:"Dalia Beach",
+    fl5:"Home", fl6:"Photo Gallery", fl7:"Blog", fl8:"Weather & Sea",
+    fl9:"About", fl10:"Advertise", fl11:"Privacy Policy", fl12:"Contact"
   }
 };
 
 function setL(lang) {
   var t = L[lang];
-  document.documentElement.setAttribute('dir', t.dir);
-  document.body.setAttribute('dir', t.dir);
+  document.documentElement.setAttribute("dir", t.dir);
+  document.body.setAttribute("dir", t.dir);
   Object.keys(t).forEach(function(id) {
-    if (id === 'dir') return;
+    if (id === "dir") return;
     var el = document.getElementById(id);
     if (el) el.innerHTML = t[id];
   });
-  document.querySelectorAll('.lb').forEach(function(b) {
-    b.classList.remove('on');
-    if (b.getAttribute('onclick') === "setL('" + lang + "')") b.classList.add('on');
+  document.querySelectorAll(".lb").forEach(function(b) {
+    b.classList.remove("on");
+    var oc = b.getAttribute("onclick")||"";
+    if (oc.indexOf(lang) > -1) b.classList.add("on");
   });
-  try { localStorage.setItem('al', lang); } catch(e) {}
+  try { localStorage.setItem("adv_lang", lang); } catch(e) {}
+}
+
+function toggleTheme() {
+  var isLight = document.body.classList.toggle("light");
+  document.getElementById("theme-btn").textContent = isLight ? "🌙" : "☀️";
+  try { localStorage.setItem("adv_theme", isLight ? "light" : "dark"); } catch(e) {}
 }
 
 (function() {
-  var s = 'ar';
-  try { s = localStorage.getItem('al') || 'ar'; } catch(e) {}
+  var s = "ar", t = "dark";
+  try { s = localStorage.getItem("adv_lang")||"ar"; t = localStorage.getItem("adv_theme")||"dark"; } catch(e) {}
+  if (t === "light") { document.body.classList.add("light"); document.getElementById("theme-btn").textContent = "🌙"; }
   setL(s);
 })();
 </script>
-
 </body>
 </html>
