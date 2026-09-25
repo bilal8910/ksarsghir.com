@@ -1,21 +1,6 @@
 {
   "articles": [
     {
-      "slug": "belyounech23",
-      "folder": "",
-      "titleAr": "Ø¨ÙÙÙÙØ´ ÙØ¬Ø¨Ù ÙÙØ³Ù",
-      "titleFr": "Ø¨ÙÙÙÙØ´ ÙØ¬Ø¨Ù ÙÙØ³Ù",
-      "titleEn": "Ø¨ÙÙÙÙØ´ ÙØ¬Ø¨Ù ÙÙØ³Ù",
-      "titleEs": "Ø¨ÙÙÙÙØ´ ÙØ¬Ø¨Ù ÙÙØ³Ù",
-      "metaAr": "Ø¯ÙÙÙ Ø³ÙØ§Ø­Ù Ø´Ø§ÙÙ ÙÙØ±ÙØ© Ø¨ÙÙÙÙØ´ ÙØ¬Ø¨Ù ÙÙØ³Ù â Ø§ÙØºÙØµØ Ø§ÙØªØ³ÙÙØ Ø¬Ø²ÙØ±Ø© ÙÙÙÙ ÙØ§ÙØ·Ø¨ÙØ¹Ø© Ø§ÙØ¨ÙØ± ÙÙ Ø£ÙØµÙ Ø´ÙØ§Ù Ø§ÙÙØºØ±Ø¨.",
-      "metaFr": "Ø¯ÙÙÙ Ø³ÙØ§Ø­Ù Ø´Ø§ÙÙ ÙÙØ±ÙØ© Ø¨ÙÙÙÙØ´ ÙØ¬Ø¨Ù ÙÙØ³Ù â Ø§ÙØºÙØµØ Ø§ÙØªØ³ÙÙØ Ø¬Ø²ÙØ±Ø© ÙÙÙÙ ÙØ§ÙØ·Ø¨ÙØ¹Ø© Ø§ÙØ¨ÙØ± ÙÙ Ø£ÙØµÙ Ø´ÙØ§Ù Ø§ÙÙØºØ±Ø¨.",
-      "metaEn": "Ø¯ÙÙÙ Ø³ÙØ§Ø­Ù Ø´Ø§ÙÙ ÙÙØ±ÙØ© Ø¨ÙÙÙÙØ´ ÙØ¬Ø¨Ù ÙÙØ³Ù â Ø§ÙØºÙØµØ Ø§ÙØªØ³ÙÙØ Ø¬Ø²ÙØ±Ø© ÙÙÙÙ ÙØ§ÙØ·Ø¨ÙØ¹Ø© Ø§ÙØ¨ÙØ± ÙÙ Ø£ÙØµÙ Ø´ÙØ§Ù Ø§ÙÙØºØ±Ø¨.",
-      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFmhzsrwSBvqo-M94qSxyDkEHJ2rWQFftXbCnmwsrHz1iOmvHdcJcafzhKjkWNS9WZHtF9U_HkYoBWtSkPL9PSSgLLiSA5aNIbg_EoX5x9QJLEwrIEAlKkkdvLJNs5Z4qs3VZ6Tmsz2ZJcb2NWJaIIUbsY2Mvn33Ih7nxfsyPmCPtzF-2N9ylZ84PshcI/s1200/8593.jpg",
-      "category": "ðºï¸ Ø³ÙØ§Ø­Ø©",
-      "date": "25â/9â/2026",
-      "featured": false
-    },
-    {
       "slug": "ksarsghir-cms-dashboard (3)",
       "folder": "",
       "titleAr": "Ksar Sghir CMS",
@@ -46,5 +31,5 @@
       "featured": false
     }
   ],
-  "updated": "2026-09-25T18:53:51.548Z"
+  "updated": "2026-09-25T18:53:55.284Z"
 }
