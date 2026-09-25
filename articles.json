@@ -1,20 +1,4 @@
 {
-  "articles": [
-    {
-      "slug": "ksarsghir-cms-dashboard (3)",
-      "folder": "",
-      "titleAr": "Ksar Sghir CMS",
-      "titleFr": "Ksar Sghir CMS",
-      "titleEn": "Ksar Sghir CMS",
-      "titleEs": "Ksar Sghir CMS",
-      "metaAr": "${d.metaAr||d.titleAr}",
-      "metaFr": "${d.metaAr||d.titleAr}",
-      "metaEn": "${d.metaAr||d.titleAr}",
-      "image": "",
-      "category": "ðºï¸ Ø³ÙØ§Ø­Ø©",
-      "date": "25â/9â/2026",
-      "featured": false
-    }
-  ],
-  "updated": "2026-09-25T18:54:00.277Z"
+  "articles": [],
+  "updated": "2026-09-25T18:54:04.809Z"
 }
