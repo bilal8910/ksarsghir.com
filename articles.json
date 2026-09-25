@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "slug": "belyounech23",
+      "folder": "",
+      "titleAr": "بليونش وجبل موسى",
+      "titleFr": "بليونش وجبل موسى",
+      "titleEn": "بليونش وجبل موسى",
+      "titleEs": "بليونش وجبل موسى",
+      "metaAr": "دليل سياحي شامل لقرية بليونش وجبل موسى — الغوص، التسلق، جزيرة ليلى والطبيعة البكر في أقصى شمال المغرب.",
+      "metaFr": "دليل سياحي شامل لقرية بليونش وجبل موسى — الغوص، التسلق، جزيرة ليلى والطبيعة البكر في أقصى شمال المغرب.",
+      "metaEn": "دليل سياحي شامل لقرية بليونش وجبل موسى — الغوص، التسلق، جزيرة ليلى والطبيعة البكر في أقصى شمال المغرب.",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFmhzsrwSBvqo-M94qSxyDkEHJ2rWQFftXbCnmwsrHz1iOmvHdcJcafzhKjkWNS9WZHtF9U_HkYoBWtSkPL9PSSgLLiSA5aNIbg_EoX5x9QJLEwrIEAlKkkdvLJNs5Z4qs3VZ6Tmsz2ZJcb2NWJaIIUbsY2Mvn33Ih7nxfsyPmCPtzF-2N9ylZ84PshcI/s1200/8593.jpg",
+      "category": "🗺️ سياحة",
+      "date": "25‏/9‏/2026",
+      "featured": false
+    },
+    {
       "slug": "ksarsghir-cms-dashboard (3)",
       "folder": "",
       "titleAr": "Ksar Sghir CMS",
@@ -44,5 +59,5 @@
       "featured": false
     }
   ],
-  "updated": "2026-09-25T17:30:01.033Z"
+  "updated": "2026-09-25T17:32:22.333Z"
 }
